@@ -59,9 +59,6 @@ bot.dialog('/', [
         case 'Button - cancel':
           session.send('Button - cancel');
           break;
-        case 'Button - cancel':
-          session.send('Button - cancel');
-          break;
         case 'Card with text':
           session.send('Card with text');
           break;

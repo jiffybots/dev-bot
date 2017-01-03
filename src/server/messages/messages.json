@@ -1,0 +1,87 @@
+[
+  {
+    "type": "text",
+    "text": "Hey homie. Put your heart, mind, and soul into even your smallest acts."
+  },
+  {
+    "type": "textWithButtons",
+    "text": "Today I choose life. Every morning when I wake up I can choose",
+    "choices": ["joy, happiness, negativity, pain"]
+  },
+  {
+    "type": "buttonChoices",
+    "choices": ["apples, almond butter, salmon, other"]
+  },
+  {
+    "type": "buttonAccept",
+     "choices": ["accept", "yes", "sure"]
+  },
+  {
+    "type": "buttonCancel",
+     "choices": ["cancel", "no", "deny"]
+  },
+  {
+    "type": "cardWithText",
+    "image": {
+      "url": "wakeup.jpg",
+      "title": "Feel life"
+    },
+    "text": "Today I choose to feel life, not to deny my humanity but embrace it."
+  },
+  {
+    "type": "cardWithoutText",
+    "image": {
+      "url": "today.jpg",
+      "title": "Nothing is worth more than this day"
+    }
+  },
+  {
+    "type": "cardWitButtons",
+    "image": {
+      "url": "socialMedia.jpeg",
+      "title": "What's your favorite social media site?"
+    },
+    "choices": ["Facebook", "Twitter", "Pinterest", "Instagram"]
+  },
+  {
+    "type": "image",
+    "image": {
+      "url": "me.jpg",
+      "title": "Preethi Kasireddy"
+    }
+  },
+  {
+    "type": "typing"
+  },
+  {
+    "type": "spinner",
+  },
+  {
+    "type": "carousel",
+    "cards": [
+      {
+        "type": "cardWithText",
+        "image": {
+          "url": "wakeup.jpg",
+          "title": "Feel life"
+        },
+        "text": "Today I choose to feel life, not to deny my humanity but embrace it."
+      },
+      {
+        "type": "cardWithText",
+        "image": {
+          "url": "productive.jpeg",
+          "title": "Let's be productive"
+        },
+        "text": "Remember, work smarter and not harder. Quality and depth over quantity."
+      },
+      {
+        "type": "cardWithoutText",
+        "image": {
+          "url": "today.jpg",
+          "title": "Nothing is worth more than this day"
+        }
+      }
+    ]
+  }
+]
