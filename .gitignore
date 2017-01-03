@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+.DS_Store
+.env 
+
+# Logs
+logs
+*.log
+*.rdb
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# VS Code config
+/.vscode
+
+# Build files
+build/
