@@ -24,10 +24,7 @@ const connector = new builder.ChatConnector({
 
 botServer.post('/api/messages', connector.listen());
 
-const bot = new builder.UniversalBot(connector, (session) => {
-    session.send("Hello, I'm the test bot!");
-    builder.Prompts.choice(session, 'What message would you like me to send?', 'Text|Text with buttons|ButtonChoice|ButtonAccept|ButtonDeny|CardWithText|CardWithoutText|CardWithButtons|Image|Typing|Spinner|Carousel', { listStyle: builder.ListStyle.button });
-});
+const bot = new builder.UniversalBot(connector);
 
 
 //=========================================================
@@ -39,6 +36,60 @@ bot.endConversationAction('goodbye', 'Goodbye :)', { matches: /^goodbye/i });
 //=========================================================
 // Bots Dialogs
 //=========================================================
+bot.dialog('/', [
+  (session, args, next) => {
+    builder.Prompts.choice(session, 'What message would you like me to send?', `Text|Text with buttons|Button - choices|Button - accept|Button - cancel|Card with text|Card without text|Card with buttons|Image|Typing|Spinner|Carousel`, 
+    { listStyle: builder.ListStyle.button });
+  },
+  (session, results, next) => {
+    if (results.response) {
+      switch (results.response.entity) {
+        case 'Text':
+          session.send('Text');
+          break;
+        case 'Text with buttons':
+          session.send('Text with buttons');
+          break;
+        case 'Button - choices':
+          session.send('Button - choices');
+          break;
+        case 'Button - accept':
+          session.send('Button - accept');
+          break;
+        case 'Button - cancel':
+          session.send('Button - cancel');
+          break;
+        case 'Button - cancel':
+          session.send('Button - cancel');
+          break;
+        case 'Card with text':
+          session.send('Card with text');
+          break;
+        case 'Card without text':
+          session.send('Card without text');
+          break;
+        case 'Card with buttons':
+          session.send('Card with buttons');
+          break;
+        case 'Image':
+          session.send('Image');
+          break;
+        case 'Typing':
+          session.send('Typing');
+          break;
+        case 'Spinner':
+          session.send('Spinner');
+          break;
+        case 'Carousel':
+          session.send('Carousel');
+          break;
+      }
+    } else {
+      return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
+    }
+    session.endDialog(`Type "test" for another message type`);
+  },
+]).triggerAction({ matches: /test/i });
 
 
 // Listen on port 3978
