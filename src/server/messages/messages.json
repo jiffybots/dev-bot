@@ -51,10 +51,17 @@
     }
   },
   {
-    "type": "typing"
+    "type": "startTyping"
   },
   {
-    "type": "spinner",
+    "type": "endTyping"
+  },
+  {
+    "type": "spinner"
+  },
+  {
+    "type": "error500",
+    "text": "I'm having some difficulty. Sorry. Let's try this again."
   },
   {
     "type": "carousel",
