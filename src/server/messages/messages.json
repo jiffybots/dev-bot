@@ -32,11 +32,12 @@
     "type": "cardWithoutText",
     "image": {
       "url": "today.jpg",
-      "title": "Nothing is worth more than this day"
+      "title": "Nothing is worth more than this day",
+      "subtitle": "By: Some poet"
     }
   },
   {
-    "type": "cardWitButtons",
+    "type": "cardWithButtons",
     "image": {
       "url": "socialMedia.jpeg",
       "title": "What's your favorite social media site?"
