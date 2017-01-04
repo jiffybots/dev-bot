@@ -2,8 +2,9 @@
   "name": "dev-bot",
   "version": "1.0.0",
   "description": "Bot for UI development purposes",
+  "main": "server/bot.js",
   "scripts": {
-    "start": "nodemon src/server/bot.js"
+    "start": "nodemon server/bot.js"
   },
   "repository": {
     "type" : "git",

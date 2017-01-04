@@ -2,7 +2,7 @@ const builder = require('botbuilder');
 const express = require('express');
 const botServer = express();
 const port = process.env.PORT || 3978;
-const toString = require('../../node_modules/ramda/src/toString');
+const toString = require('../node_modules/ramda/src/toString');
 
 // Helpers
 const helpers = require('./helpers');
