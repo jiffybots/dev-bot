@@ -39,7 +39,7 @@ bot.beginDialogAction('help', '/help', { matches: /^help/i }); // todo
 bot.dialog('/', [
   (session, args, next) => {
     console.log('connected to main dialog');
-    builder.Prompts.choice(session, 'What message would you like me to send?', `Text|Text with buttons|Button - choices|Button - accept|Button - cancel|Card with text|Card without text|Card with buttons|Image|Start typing|End typing|Spinner|Carousel|Error - 500`, 
+    builder.Prompts.choice(session, 'What message would you like me to send?', `Text|Text with buttons|Button - choices|Button - accept|Button - cancel|Card with text|Card without text|Card with buttons|Image|Start typing|End typing|Spinner|Carousel|Error - 500|Error - 403`, 
     { listStyle: builder.ListStyle.button });
   },
   (session, results, next) => {
@@ -69,7 +69,7 @@ bot.dialog('/', [
           session.send(toString(helpers.findMessage('cardWithoutText', messages)));
           break;
         case 'Card with buttons':
-          session.send(toString(helpers.findMessage('cardWitButtons', messages)));
+          session.send(toString(helpers.findMessage('cardWithButtons', messages)));
           break;
         case 'Image':
           session.send(toString(helpers.findMessage('image', messages)));
@@ -88,6 +88,9 @@ bot.dialog('/', [
           break;
         case 'Error - 500':
           session.send(toString(helpers.findMessage('error500', messages)));
+          break;
+        case 'Error - 403':
+          session.send(toString(helpers.findMessage('error403', messages)));
           break;
         default:
           session.send(toString(helpers.findMessage('text', messages)));

@@ -1,11 +1,1 @@
-- Set up JSON response formats for getting back different types of messages (for Jiffybots purpose)
-  - text
-  - text with buttons
-  - buttons
-  - cards - title, image, optional text, optional buttons
-  - User input
-  - Typing
-  - Spinner
-  - Carousel
-- Implement responses to the above using different triggerActions
-- Deploy bot
+# todo

@@ -65,6 +65,10 @@
     "text": "I'm having some difficulty. Sorry. Let's try this again."
   },
   {
+    "type": "error403",
+    "text": "Uh oh. Looks like we ran into an authorization issue. Try restarting the app."
+  },
+  {
     "type": "carousel",
     "cards": [
       {
