@@ -1,7 +1,7 @@
 const builder = require('botbuilder');
 const express = require('express');
 const botServer = express();
-const port = process.env.PORT || 3978;
+const port = process.env.port || process.env.PORT || 3978;
 const toString = require('../node_modules/ramda/src/toString');
 
 // Helpers
@@ -15,10 +15,10 @@ const messages = require('./messages/messages.json');
 //=========================================================
 
 const connector = new builder.ChatConnector({
-    // appId: process.env.MICROSOFT_APP_ID,
-    // appPassword: process.env.MICROSOFT_APP_PASSWORD
-  appId: "321b1ef0-b31e-474b-bc0b-4dffcea4c199",
-  appPassword: "M3a2PkFtJNeBnquU6M2FC3y"
+  appId: process.env.MICROSOFT_APP_ID,
+  appPassword: process.env.MICROSOFT_APP_PASSWORD
+  // appId: "321b1ef0-b31e-474b-bc0b-4dffcea4c199",
+  // appPassword: "M3a2PkFtJNeBnquU6M2FC3y"
 });
 
 botServer.post('/api/messages', connector.listen());
@@ -38,7 +38,6 @@ bot.beginDialogAction('help', '/help', { matches: /^help/i }); // todo
 //=========================================================
 bot.dialog('/', [
   (session, args, next) => {
-    console.log('got here')
     builder.Prompts.choice(session, 'What message would you like me to send?', `Text|Text with buttons|Button - choices|Button - accept|Button - cancel|Card with text|Card without text|Card with buttons|Image|Start typing|End typing|Spinner|Carousel|Error - 500`, 
     { listStyle: builder.ListStyle.button });
   },
@@ -107,7 +106,6 @@ botServer.listen(port, (error) => {
   if (error) {
     console.error(error.stack);
   } else {
-    // bot.beginDialog(address, '/');
     console.info('==> Bot listening on port %s.', port);
   }
 });
