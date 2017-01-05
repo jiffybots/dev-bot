@@ -4,7 +4,8 @@
   "description": "Bot for UI development purposes",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "forever": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type" : "git",
