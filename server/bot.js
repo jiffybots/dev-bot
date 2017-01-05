@@ -38,6 +38,7 @@ bot.beginDialogAction('help', '/help', { matches: /^help/i }); // todo
 //=========================================================
 bot.dialog('/', [
   (session, args, next) => {
+    console.log('connected to main dialog');
     builder.Prompts.choice(session, 'What message would you like me to send?', `Text|Text with buttons|Button - choices|Button - accept|Button - cancel|Card with text|Card without text|Card with buttons|Image|Start typing|End typing|Spinner|Carousel|Error - 500`, 
     { listStyle: builder.ListStyle.button });
   },
