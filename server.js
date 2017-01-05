@@ -2,13 +2,13 @@ const builder = require('botbuilder');
 const express = require('express');
 const botServer = express();
 const port = process.env.port || process.env.PORT || 3978;
-const toString = require('../node_modules/ramda/src/toString');
+const toString = require('./node_modules/ramda/src/toString');
 
 // Helpers
-const helpers = require('./helpers');
+const helpers = require('./src/helpers');
 
 // Dialogue messages
-const messages = require('./messages/messages.json');
+const messages = require('./src/messages/messages.json');
 
 //=========================================================
 // Create chat bot
