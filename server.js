@@ -2,7 +2,6 @@ const builder = require('botbuilder');
 const express = require('express');
 const botServer = express();
 const port = process.env.port || process.env.PORT || 3978;
-const toString = require('./node_modules/ramda/src/toString');
 
 // Helpers
 const helpers = require('./src/helpers');
@@ -38,62 +37,83 @@ bot.beginDialogAction('help', '/help', { matches: /^help/i }); // todo
 //=========================================================
 bot.dialog('/', [
   (session, args, next) => {
-    console.log('connected to main dialog');
-    builder.Prompts.choice(session, 'What message would you like me to send?', `Text|Text with buttons|Button - choices|Button - accept|Button - cancel|Card with text|Card without text|Card with buttons|Image|Start typing|End typing|Spinner|Carousel|Error - 500|Error - 403`, 
-    { listStyle: builder.ListStyle.button });
+    console.info('connected to main dialog');
+
+    session.send(JSON.stringify({
+      type: 'text',
+      prompt: 0,
+      text: 'What message would you like me to send?',
+    }));
+    builder.Prompts.text(session, JSON.stringify({
+      type: 'buttonChoices',
+      prompt: 1,
+      choices: [
+        { id: '1', text: 'Text' },
+        { id: '2', text: 'Text with buttons' },
+        { id: '3', text: 'Button - choices' },
+        { id: '4', text: 'Button - yes/no' },
+        { id: '5', text: 'Card with text' },
+        { id: '6', text: 'Card without text' },
+        { id: '7', text: 'Card with buttons' },
+        { id: '8', text: 'Image' },
+        { id: '9', text: 'Start typing' },
+        { id: '10', text: 'End typing' },
+        { id: '11', text: 'Spinner' },
+        { id: '12', text: 'Carousel' },
+        { id: '13', text: 'Error - 500' },
+        { id: '14', text: 'Error - 403' },
+      ],
+    }));
   },
   (session, results, next) => {
     address = session.message.address;
 
     if (results.response) {
-      switch (results.response.entity) {
-        case 'Text':
-          session.send(toString(helpers.findMessage('text', messages)));
+      switch (results.response) {
+        case '1':
+          session.send(JSON.stringify(helpers.findMessage('text', messages)));
           break;
-        case 'Text with buttons':
-          session.send(toString(helpers.findMessage('textWithButtons', messages)));
+        case '2':
+          session.send(JSON.stringify(helpers.findMessage('textWithButtons', messages)));
           break;
-        case 'Button - choices':
-          session.send(toString(helpers.findMessage('buttonChoices', messages)));
+        case '3':
+          session.send(JSON.stringify(helpers.findMessage('buttonChoices', messages)));
           break;
-        case 'Button - accept':
-          session.send(toString(helpers.findMessage('buttonAccept', messages)));
+        case '4':
+          session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));
           break;
-        case 'Button - cancel':
-          session.send(toString(helpers.findMessage('buttonCancel', messages)));
+        case '5':
+          session.send(JSON.stringify(helpers.findMessage('cardWithText', messages)));
           break;
-        case 'Card with text':
-          session.send(toString(helpers.findMessage('cardWithText', messages)));
+        case '6':
+          session.send(JSON.stringify(helpers.findMessage('cardWithoutText', messages)));
           break;
-        case 'Card without text':
-          session.send(toString(helpers.findMessage('cardWithoutText', messages)));
+        case '7':
+          session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));
           break;
-        case 'Card with buttons':
-          session.send(toString(helpers.findMessage('cardWithButtons', messages)));
+        case '8':
+          session.send(JSON.stringify(helpers.findMessage('image', messages)));
           break;
-        case 'Image':
-          session.send(toString(helpers.findMessage('image', messages)));
+        case '9':
+          session.send(JSON.stringify(helpers.findMessage('startTyping', messages)));
           break;
-        case 'Start typing':
-          session.send(toString(helpers.findMessage('startTyping', messages)));
+        case '10':
+          session.send(JSON.stringify(helpers.findMessage('endTyping', messages)));
           break;
-        case 'End typing':
-          session.send(toString(helpers.findMessage('endTyping', messages)));
+        case '11':
+          session.send(JSON.stringify(helpers.findMessage('spinner', messages)));
           break;
-        case 'Spinner':
-          session.send(toString(helpers.findMessage('spinner', messages)));
+        case '12':
+          session.send(JSON.stringify(helpers.findMessage('carousel', messages)));
           break;
-        case 'Carousel':
-          session.send(toString(helpers.findMessage('carousel', messages)));
+        case '13':
+          session.send(JSON.stringify(helpers.findMessage('error500', messages)));
           break;
-        case 'Error - 500':
-          session.send(toString(helpers.findMessage('error500', messages)));
-          break;
-        case 'Error - 403':
-          session.send(toString(helpers.findMessage('error403', messages)));
+        case '14':
+          session.send(JSON.stringify(helpers.findMessage('error403', messages)));
           break;
         default:
-          session.send(toString(helpers.findMessage('text', messages)));
+          session.send(JSON.stringify(helpers.findMessage('text', messages)));
           break;
       }
     } else {

@@ -1,27 +1,41 @@
 [
   {
     "type": "text",
+    "prompt": "0",
     "text": "Hey homie. Put your heart, mind, and soul into even your smallest acts."
   },
   {
     "type": "textWithButtons",
+    "prompt": "1",
     "text": "Today I choose life. Every morning when I wake up I can choose",
-    "choices": ["joy, happiness, negativity, pain"]
+    "choices": [
+      { "id": "1", "text": "joy" },
+      { "id": "2", "text": "happiness" },
+      { "id": "3", "text": "depression" },
+      { "id": "4", "text": "love" }
+    ]
   },
   {
     "type": "buttonChoices",
-    "choices": ["apples, almond butter, salmon, other"]
+    "prompt": "1",
+    "choices": [
+      { "id": "1", "text": "apples" },
+      { "id": "2", "text": "almond butter" },
+      { "id": "3", "text": "banana" },
+      { "id": "4", "text": "carrots" }
+    ]
   },
   {
-    "type": "buttonAccept",
-     "choices": ["accept", "yes", "sure"]
-  },
-  {
-    "type": "buttonCancel",
-     "choices": ["cancel", "no", "deny"]
+    "type": "buttonYesNo",
+    "prompt": "1",
+     "choices": [
+       { "id": "1", "text": "yes" },
+       { "id": "2", "text": "no" }
+     ]
   },
   {
     "type": "cardWithText",
+    "prompt": "0",
     "image": {
       "url": "wakeup.jpg",
       "title": "Feel life"
@@ -30,6 +44,7 @@
   },
   {
     "type": "cardWithoutText",
+    "prompt": "0",
     "image": {
       "url": "today.jpg",
       "title": "Nothing is worth more than this day",
@@ -42,34 +57,47 @@
       "url": "socialMedia.jpeg",
       "title": "What's your favorite social media site?"
     },
-    "choices": ["Facebook", "Twitter", "Pinterest", "Instagram"]
+    "prompt": "1",
+    "choices": [
+      { "id": "1", "text": "Facebook" },
+      { "id": "2", "text": "Twitter" },
+      { "id": "3", "text": "Instagram" },
+      { "id": "4", "text": "Pinterest" }
+    ]
   },
   {
     "type": "image",
+    "prompt": "0",
     "image": {
       "url": "me.jpg",
       "title": "Preethi Kasireddy"
     }
   },
   {
-    "type": "startTyping"
+    "type": "startTyping",
+    "prompt": "0"
   },
   {
-    "type": "endTyping"
+    "type": "endTyping",
+    "prompt": "0"
   },
   {
-    "type": "spinner"
+    "type": "spinner",
+    "prompt": "0"
   },
   {
     "type": "error500",
+    "prompt": "0",
     "text": "I'm having some difficulty. Sorry. Let's try this again."
   },
   {
     "type": "error403",
+    "prompt": "-",
     "text": "Uh oh. Looks like we ran into an authorization issue. Try restarting the app."
   },
   {
     "type": "carousel",
+    "prompt": "0",
     "cards": [
       {
         "type": "cardWithText",
