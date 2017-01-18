@@ -5,14 +5,14 @@
     "text": "Hey homie. Put your heart, mind, and soul into even your smallest acts."
   },
   {
-    "type": "textWithButtons",
+    "type": "quickReply",
     "prompt": "1",
-    "text": "Today I choose life. Every morning when I wake up I can choose",
+    "text": "Today I choose life. What do you choose?",
     "choices": [
-      { "id": "1", "text": "joy" },
-      { "id": "2", "text": "happiness" },
-      { "id": "3", "text": "depression" },
-      { "id": "4", "text": "love" }
+      { "id": "1", "type": "light", "text": "joy" },
+      { "id": "2", "type": "light", "text": "happiness" },
+      { "id": "3", "type": "light", "text": "depression" },
+      { "id": "4","type": "light", "text": "love" }
     ]
   },
   {

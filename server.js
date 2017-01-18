@@ -49,7 +49,7 @@ bot.dialog('/', [
       prompt: 1,
       choices: [
         { id: '1', text: 'Text' },
-        { id: '2', text: 'Text with buttons' },
+        { id: '2', text: 'Quick reply' },
         { id: '3', text: 'Button - choices' },
         { id: '4', text: 'Button - yes/no' },
         { id: '5', text: 'Card with text' },
@@ -74,7 +74,7 @@ bot.dialog('/', [
           session.send(JSON.stringify(helpers.findMessage('text', messages)));
           break;
         case '2':
-          session.send(JSON.stringify(helpers.findMessage('textWithButtons', messages)));
+          session.send(JSON.stringify(helpers.findMessage('quickReply', messages)));
           break;
         case '3':
           session.send(JSON.stringify(helpers.findMessage('buttonChoices', messages)));
