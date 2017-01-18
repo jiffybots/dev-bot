@@ -117,6 +117,7 @@ bot.dialog('/', [
     }
     // session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
     // delete address.conversation;
+    next();
   },
   (session, results, next) => {
     if (results.response) {
