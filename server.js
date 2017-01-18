@@ -119,7 +119,7 @@ bot.dialog('/', [
     } else {
       return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
     }
-    session.endDialog(`Type "test" to try another message`);
+    session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
     // delete address.conversation;
   },
 ]).triggerAction({ matches: /test/i });
