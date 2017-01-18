@@ -70,7 +70,7 @@ bot.dialog('/', [
           session.send(JSON.stringify(helpers.findMessage('text', messages)));
           break;
         case '2':
-          session.send(JSON.stringify(helpers.findMessage('quickReply', messages)));
+          builder.Prompts.text(session, JSON.stringify(helpers.findMessage('quickReply', messages)));
           break;
         case '3':
           session.send(JSON.stringify(helpers.findMessage('buttonChoices', messages)));
@@ -115,8 +115,15 @@ bot.dialog('/', [
     } else {
       return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
     }
-    session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
+    // session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
     // delete address.conversation;
+  },
+  (session, results, next) => {
+    if (results.response) {
+      session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: result.response }));
+    } else {
+      session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
+    }
   },
 ]).triggerAction({ matches: /test/i });
 
