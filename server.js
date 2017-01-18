@@ -39,13 +39,9 @@ bot.dialog('/', [
   (session, args, next) => {
     console.info('connected to main dialog');
 
-    session.send(JSON.stringify({
-      type: 'text',
-      prompt: 0,
-      text: 'What message would you like me to send?',
-    }));
     builder.Prompts.text(session, JSON.stringify({
-      type: 'buttonChoices',
+      type: 'quickReply',
+      text: 'What message would you like me to send?',
       prompt: 1,
       choices: [
         { id: '1', text: 'Text' },
