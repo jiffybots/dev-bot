@@ -44,20 +44,20 @@ bot.dialog('/', [
       text: 'What message would you like me to send?',
       prompt: 1,
       choices: [
-        { id: '1', type: 'light', text: 'Text' },
-        { id: '2', type: 'light', text: 'Quick reply' },
-        { id: '3', type: 'light', text: 'Button - choices' },
-        { id: '4', type: 'light', text: 'Button - yes/no' },
-        { id: '5', type: 'light', text: 'Card with text' },
-        { id: '6', type: 'light', text: 'Card without text' },
-        { id: '7', type: 'light', text: 'Card with buttons' },
-        { id: '8', type: 'light', text: 'Image' },
-        { id: '9', type: 'light', text: 'Start typing' },
-        { id: '10', type: 'light', text: 'End typing' },
-        { id: '11', type: 'light', text: 'Spinner' },
-        { id: '12', type: 'light', text: 'Carousel' },
-        { id: '13', type: 'light', text: 'Error - 500' },
-        { id: '14', type: 'light', text: 'Error - 403' },
+        { id: '1', type: 'text', color: 'light', text: 'Text' },
+        { id: '2', type: 'text', color: 'light', text: 'Quick reply' },
+        { id: '3', type: 'text', color: 'light', text: 'Quick reply with image' },
+        { id: '4', type: 'text', color: 'light', text: 'Button - yes/no' },
+        { id: '5', type: 'text', color: 'light', text: 'Card with text' },
+        { id: '6', type: 'text', color: 'light', text: 'Card without text' },
+        { id: '7', type: 'text', color: 'light', text: 'Card with buttons' },
+        { id: '8', type: 'text', color: 'light', text: 'Image' },
+        { id: '9', type: 'text', color: 'light', text: 'Start typing' },
+        { id: '10', type: 'text', color: 'light', text: 'End typing' },
+        { id: '11', type: 'text', color: 'light', text: 'Spinner' },
+        { id: '12', type: 'text', color: 'light', text: 'Carousel' },
+        { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
+        { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
       ],
     }));
   },
@@ -73,7 +73,7 @@ bot.dialog('/', [
           builder.Prompts.text(session, JSON.stringify(helpers.findMessage('quickReply', messages)));
           break;
         case '3':
-          session.send(JSON.stringify(helpers.findMessage('buttonChoices', messages)));
+          session.send(JSON.stringify(helpers.findMessage('quickReplyWithImage', messages)));
           break;
         case '4':
           session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));

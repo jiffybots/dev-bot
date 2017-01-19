@@ -9,28 +9,29 @@
     "prompt": "1",
     "text": "Today I choose life. What do you choose?",
     "choices": [
-      { "id": "1", "type": "light", "text": "joy" },
-      { "id": "2", "type": "light", "text": "happiness" },
-      { "id": "3", "type": "light", "text": "depression" },
-      { "id": "4","type": "light", "text": "love" }
+      { "id": "1", "type": "text", "color": "light", "text": "joy" },
+      { "id": "2", "type": "text", "color": "light", "text": "happiness" },
+      { "id": "3", "type": "text", "color": "light", "text": "depression" },
+      { "id": "4", "type": "text", "color": "light", "text": "love" }
     ]
   },
   {
-    "type": "buttonChoices",
+    "type": "quickReplyWithImage",
     "prompt": "1",
+    "text": "Today I choose life. What do you choose?",
     "choices": [
-      { "id": "1", "text": "apples" },
-      { "id": "2", "text": "almond butter" },
-      { "id": "3", "text": "banana" },
-      { "id": "4", "text": "carrots" }
+      { "id": "1", "type": "textWithImage", "color": "light", "text": "joy" },
+      { "id": "2", "type": "textWithImage", "color": "light", "text": "happiness" },
+      { "id": "3", "type": "textWithImage", "color": "light", "text": "depression" },
+      { "id": "4", "type": "textWithImage", "color": "light", "text": "love" }
     ]
   },
   {
     "type": "buttonYesNo",
     "prompt": "1",
      "choices": [
-       { "id": "1", "text": "yes" },
-       { "id": "2", "text": "no" }
+       { "id": "1", "type": "text", "color": "dark", "text": "yes" },
+       { "id": "2", "type": "text", "color": "dark", "text": "no" },
      ]
   },
   {
@@ -59,10 +60,10 @@
     },
     "prompt": "1",
     "choices": [
-      { "id": "1", "text": "Facebook" },
-      { "id": "2", "text": "Twitter" },
-      { "id": "3", "text": "Instagram" },
-      { "id": "4", "text": "Pinterest" }
+      { "id": "1", "type": "text", "color": "light", "text": "Facebook" },
+      { "id": "2", "type": "text", "color": "light", "text": "Twitter" },
+      { "id": "3", "type": "text", "color": "light", "text": "Instagram" },
+      { "id": "4", "type": "text", "color": "light", "text": "None" }
     ]
   },
   {
@@ -92,7 +93,7 @@
   },
   {
     "type": "error403",
-    "prompt": "-",
+    "prompt": "0",
     "text": "Uh oh. Looks like we ran into an authorization issue. Try restarting the app."
   },
   {
