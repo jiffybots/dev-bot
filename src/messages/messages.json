@@ -31,7 +31,7 @@
     "prompt": "1",
      "choices": [
        { "id": "1", "type": "text", "color": "dark", "text": "yes" },
-       { "id": "2", "type": "text", "color": "dark", "text": "no" },
+       { "id": "2", "type": "text", "color": "dark", "text": "no" }
      ]
   },
   {

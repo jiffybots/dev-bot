@@ -23,7 +23,7 @@ const connector = new builder.ChatConnector({
 botServer.post('/api/messages', connector.listen());
 
 const bot = new builder.UniversalBot(connector);
-let address;
+let address, currentChoices;
 
 //=========================================================
 // Bots Global Actions
@@ -39,7 +39,7 @@ bot.dialog('/', [
   (session, args, next) => {
     console.info('connected to main dialog');
 
-    builder.Prompts.text(session, JSON.stringify({
+    const quickReplyOptions = {
       type: 'quickReply',
       text: 'What message would you like me to send?',
       prompt: 1,
@@ -59,7 +59,10 @@ bot.dialog('/', [
         { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
         { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
       ],
-    }));
+    };
+    let currentChoices = quickReplyOptions.choices;
+
+    builder.Prompts.text(session, JSON.stringify(quickReplyOptions));
   },
   (session, results, next) => {
     address = session.message.address;
@@ -121,7 +124,10 @@ bot.dialog('/', [
   },
   (session, results, next) => {
     if (results.response) {
-      session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: result.response }));
+      const selection = helpers.find(helpers.propEq('id', results.response))(currentChoices);
+      const message = `You picked ${selection.text}:`;
+      
+      session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: message }));
     } else {
       session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
     }
