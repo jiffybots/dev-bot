@@ -38,7 +38,7 @@
     "type": "cardWithText",
     "prompt": "0",
     "image": {
-      "url": "wakeup.jpg",
+      "url": "http://rightsinfo.org/app/uploads/2015/11/righttolife.jpg",
       "title": "Feel life"
     },
     "text": "Today I choose to feel life, not to deny my humanity but embrace it."
@@ -47,7 +47,7 @@
     "type": "cardWithoutText",
     "prompt": "0",
     "image": {
-      "url": "today.jpg",
+      "url": "http://www.imgion.com/images/02/Morning-wishes-with-healthy-meall.jpg",
       "title": "Nothing is worth more than this day",
       "subtitle": "By: Some poet"
     }
@@ -55,7 +55,7 @@
   {
     "type": "cardWithButtons",
     "image": {
-      "url": "socialMedia.jpeg",
+      "url": "https://d19n1ren9crl9v.cloudfront.net/wp-content/uploads/2015/09/bigstock-Modern-Keyboard-With-Colored-S-68403502-1024x683.jpg",
       "title": "What's your favorite social media site?"
     },
     "prompt": "1",
@@ -70,7 +70,7 @@
     "type": "image",
     "prompt": "0",
     "image": {
-      "url": "me.jpg",
+      "url": "https://cdn-images-1.medium.com/max/1200/1*lHIefjTQECM96G6Ef8xn6g.jpeg",
       "title": "Preethi Kasireddy"
     }
   },
@@ -103,7 +103,7 @@
       {
         "type": "cardWithText",
         "image": {
-          "url": "wakeup.jpg",
+          "url": "http://rightsinfo.org/app/uploads/2015/11/righttolife.jpg",
           "title": "Feel life"
         },
         "text": "Today I choose to feel life, not to deny my humanity but embrace it."
@@ -111,7 +111,7 @@
       {
         "type": "cardWithText",
         "image": {
-          "url": "productive.jpeg",
+          "url": "http://www.imgion.com/images/02/Morning-wishes-with-healthy-meall.jpg",
           "title": "Let's be productive"
         },
         "text": "Remember, work smarter and not harder. Quality and depth over quantity."
@@ -119,7 +119,7 @@
       {
         "type": "cardWithoutText",
         "image": {
-          "url": "today.jpg",
+          "url": "https://cdn-images-1.medium.com/max/1200/1*lHIefjTQECM96G6Ef8xn6g.jpeg",
           "title": "Nothing is worth more than this day"
         }
       }
