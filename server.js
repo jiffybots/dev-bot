@@ -119,18 +119,8 @@ bot.dialog('/', [
       return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
     }
     // session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
-    // delete address.conversation;
-    // next();
-  },
-  (session, results, next) => {
-    if (results.response) {
-      const selection = helpers.find(helpers.propEq('id', results.response))(currentChoices);
-      const message = `You picked ${selection.text}:`;
-
-      session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: message }));
-    } else {
-      session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
-    }
+    delete address.conversation;
+    session.replaceDialog('/', { reprompt: true });
   },
 ]).triggerAction({ matches: /test/i });
 
