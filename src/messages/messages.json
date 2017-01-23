@@ -39,9 +39,9 @@
     "prompt": "0",
     "image": {
       "url": "http://rightsinfo.org/app/uploads/2015/11/righttolife.jpg",
-      "title": "Feel life",
-      "src": "https://www.google.com"
+      "title": "Feel life"
     },
+    "src": "https://www.google.com",
     "text": "Today I choose to feel life, not to deny my humanity but embrace it."
   },
   {
@@ -50,9 +50,9 @@
     "image": {
       "url": "http://www.imgion.com/images/02/Morning-wishes-with-healthy-meall.jpg",
       "title": "Nothing is worth more than this day",
-      "subtitle": "By: Some poet",
-      "src": "https://www.google.com"
-    }
+      "subtitle": "By: Some poet"
+    },
+    "src": "https://www.google.com"
   },
   {
     "type": "cardWithButtons",
@@ -73,9 +73,9 @@
     "prompt": "0",
     "image": {
       "url": "https://cdn-images-1.medium.com/max/1200/1*lHIefjTQECM96G6Ef8xn6g.jpeg",
-      "title": "Preethi Kasireddy",
-      "src": "http://preethikasireddy.me"
-    }
+      "title": "Preethi Kasireddy"
+    },
+    "src": "http://preethikasireddy.me"
   },
   {
     "type": "startTyping",
