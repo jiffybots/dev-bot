@@ -118,12 +118,11 @@ bot.dialog('/', [
     } else {
       return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
     }
-    // session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
-    delete address.conversation;
-    session.replaceDialog('/', { reprompt: true });
+    session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
+    // delete address.conversation;
+    // session.replaceDialog('/main');
   },
 ]).triggerAction({ matches: /test/i });
-
 
 // Listen on port 3978
 botServer.listen(port, (error) => {
