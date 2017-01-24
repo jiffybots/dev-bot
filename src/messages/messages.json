@@ -16,23 +16,21 @@
     ]
   },
   {
-    "type": "quickReplyWithImage",
+    "type": "quickReplyTwoChoices",
     "prompt": "1",
-    "text": "Today I choose life. What do you choose?",
+    "text": "Would you like to continue?",
     "choices": [
-      { "id": "1", "type": "textWithImage", "color": "light", "text": "joy" },
-      { "id": "2", "type": "textWithImage", "color": "light", "text": "happiness" },
-      { "id": "3", "type": "textWithImage", "color": "light", "text": "depression" },
-      { "id": "4", "type": "textWithImage", "color": "light", "text": "love" }
+      { "id": "1", "type": "text", "color": "dark", "text": "Sure" },
+      { "id": "2", "type": "text", "color": "dark", "text": "Nope" }
     ]
   },
   {
     "type": "buttonYesNo",
     "prompt": "1",
-     "choices": [
-       { "id": "1", "type": "text", "color": "dark", "text": "yes" },
-       { "id": "2", "type": "text", "color": "dark", "text": "no" }
-     ]
+    "choices": [
+      { "id": "1", "type": "text", "color": "dark", "text": "yes" },
+      { "id": "2", "type": "text", "color": "dark", "text": "no" }
+    ]
   },
   {
     "type": "cardWithText",

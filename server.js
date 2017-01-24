@@ -45,8 +45,8 @@ bot.dialog('/', [
       prompt: 1,
       choices: [
         { id: '1', type: 'text', color: 'light', text: 'Text' },
-        { id: '2', type: 'text', color: 'light', text: 'Quick reply' },
-        { id: '3', type: 'text', color: 'light', text: 'Quick reply with image' },
+        { id: '2', type: 'text', color: 'light', text: 'Quick reply - 3+ choices' },
+        { id: '3', type: 'text', color: 'light', text: 'Quick reply - 2 choices' },
         { id: '4', type: 'text', color: 'light', text: 'Button - yes/no' },
         { id: '5', type: 'text', color: 'light', text: 'Card with text' },
         { id: '6', type: 'text', color: 'light', text: 'Card without text' },
@@ -76,7 +76,7 @@ bot.dialog('/', [
           builder.Prompts.text(session, JSON.stringify(helpers.findMessage('quickReply', messages)));
           break;
         case '3':
-          session.send(JSON.stringify(helpers.findMessage('quickReplyWithImage', messages)));
+          session.send(JSON.stringify(helpers.findMessage('quickReplyTwoChoices', messages)));
           break;
         case '4':
           session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));
