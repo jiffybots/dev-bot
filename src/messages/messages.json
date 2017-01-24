@@ -20,8 +20,8 @@
     "prompt": "1",
     "text": "Would you like to continue?",
     "choices": [
-      { "id": "1", "type": "text", "color": "dark", "text": "Sure" },
-      { "id": "2", "type": "text", "color": "dark", "text": "Nope" }
+      { "id": "1", "type": "text", "color": "light", "text": "Sure" },
+      { "id": "2", "type": "text", "color": "light", "text": "Nope" }
     ]
   },
   {
