@@ -52,7 +52,7 @@ bot.dialog('/', [
         { id: '6', type: 'text', color: 'light', text: 'Card without text' },
         { id: '7', type: 'text', color: 'light', text: 'Card with buttons' },
         { id: '8', type: 'text', color: 'light', text: 'Image' },
-        { id: '9', type: 'text', color: 'light', text: 'Start typing' },
+        { id: '9', type: 'text', color: 'light', text: 'Typing' },
         { id: '10', type: 'text', color: 'light', text: 'End typing' },
         { id: '11', type: 'text', color: 'light', text: 'Spinner' },
         { id: '12', type: 'text', color: 'light', text: 'Carousel' },
@@ -94,7 +94,7 @@ bot.dialog('/', [
           session.send(JSON.stringify(helpers.findMessage('image', messages)));
           break;
         case '9':
-          session.send(JSON.stringify(helpers.findMessage('startTyping', messages)));
+          session.send(JSON.stringify(helpers.findMessage('typing', messages)));
           break;
         case '10':
           session.send(JSON.stringify(helpers.findMessage('endTyping', messages)));
