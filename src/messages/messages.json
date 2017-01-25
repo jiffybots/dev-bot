@@ -103,26 +103,32 @@
     "cards": [
       {
         "type": "cardWithText",
+        "prompt": "0",
         "image": {
           "url": "http://rightsinfo.org/app/uploads/2015/11/righttolife.jpg",
           "title": "Feel life"
         },
-        "text": "Today I choose to feel life, not to deny my humanity but embrace it."
+        "text": "Today I choose to feel life, not to deny my humanity but embrace it.",
+        "src": "https://www.google.com"
       },
       {
         "type": "cardWithText",
+        "prompt": "0",
         "image": {
           "url": "http://www.imgion.com/images/02/Morning-wishes-with-healthy-meall.jpg",
           "title": "Let's be productive"
         },
-        "text": "Remember, work smarter and not harder. Quality and depth over quantity."
+        "text": "Remember, work smarter and not harder. Quality and depth over quantity.",
+        "src": "https://www.google.com"
       },
       {
         "type": "cardWithoutText",
+        "prompt": "0",
         "image": {
           "url": "https://cdn-images-1.medium.com/max/1200/1*lHIefjTQECM96G6Ef8xn6g.jpeg",
           "title": "Nothing is worth more than this day"
-        }
+        },
+        "src": "https://www.google.com"
       }
     ]
   }
