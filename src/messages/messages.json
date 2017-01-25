@@ -122,12 +122,13 @@
         "src": "https://www.google.com"
       },
       {
-        "type": "cardWithoutText",
+        "type": "cardWithText",
         "prompt": "0",
         "image": {
           "url": "https://cdn-images-1.medium.com/max/1200/1*lHIefjTQECM96G6Ef8xn6g.jpeg",
           "title": "Nothing is worth more than this day"
         },
+        "text": "Preethi is a ballllllerrrrrr",
         "src": "https://www.google.com"
       }
     ]
