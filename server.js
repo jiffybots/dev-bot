@@ -50,16 +50,16 @@ bot.dialog('/', [
         { id: '1', type: 'text', color: 'light', text: 'Text' },
         { id: '2', type: 'text', color: 'light', text: 'Quick reply - 3+ choices' },
         { id: '3', type: 'text', color: 'light', text: 'Quick reply - 2 choices' },
-        { id: '4', type: 'text', color: 'light', text: 'Button - yes/no' },
+        // { id: '4', type: 'text', color: 'light', text: 'Button - yes/no' },
         { id: '5', type: 'text', color: 'light', text: 'Card with text' },
         { id: '6', type: 'text', color: 'light', text: 'Card without text' },
         { id: '7', type: 'text', color: 'light', text: 'Card with buttons' },
         { id: '8', type: 'text', color: 'light', text: 'Image' },
         { id: '9', type: 'text', color: 'light', text: 'Typing' },
-        { id: '10', type: 'text', color: 'light', text: 'End typing' },
-        { id: '11', type: 'text', color: 'light', text: 'Spinner' },
+        // { id: '10', type: 'text', color: 'light', text: 'End typing' },
+        // { id: '11', type: 'text', color: 'light', text: 'Spinner' },
         { id: '12', type: 'text', color: 'light', text: 'Carousel' },
-        { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
+        // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
         { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
       ],
     };
@@ -72,19 +72,19 @@ bot.dialog('/', [
 
     if (results.response) {
       switch (results.response) {
-        case '1':
+        case 'Text':
           session.send(JSON.stringify(helpers.findMessage('text', messages)));
           break;
-        case '2':
+        case 'Quick reply - 3+ choices':
           builder.Prompts.text(session, JSON.stringify(helpers.findMessage('quickReply', messages)));
           break;
-        case '3':
+        case 'Quick reply - 2 choices':
           session.send(JSON.stringify(helpers.findMessage('quickReplyTwoChoices', messages)));
           break;
         case '4':
           session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));
           break;
-        case '5':
+        case 'Card with text':
           session.send(JSON.stringify(helpers.findMessage('cardWithText', messages)));
           break;
         case '6':
