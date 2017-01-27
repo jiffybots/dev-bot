@@ -22,7 +22,10 @@ const connector = new builder.ChatConnector({
 
 botServer.post('/api/messages', connector.listen());
 
-const bot = new builder.UniversalBot(connector);
+const bot = new builder.UniversalBot(connector, (session) => {
+  session.send("Hey there! Glad to have you. Say anything to get started.");
+});
+
 let address, currentChoices;
 
 //=========================================================
@@ -30,7 +33,7 @@ let address, currentChoices;
 //=========================================================
 
 bot.endConversationAction('goodbye', 'Goodbye :)', { matches: /^goodbye/i });
-bot.beginDialogAction('help', '/help', { matches: /^help/i }); // todo
+bot.beginDialogAction('help', '/', { matches: /^help/i }); // todo
 
 //=========================================================
 // Bots Dialogs
