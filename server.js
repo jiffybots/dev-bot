@@ -60,7 +60,7 @@ bot.dialog('/', [
         // { id: '11', type: 'text', color: 'light', text: 'Spinner' },
         { id: '12', type: 'text', color: 'light', text: 'Carousel' },
         // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
-        { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
+        // { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
       ],
     };
     let currentChoices = quickReplyOptions.choices;
@@ -87,16 +87,16 @@ bot.dialog('/', [
         case 'Card with text':
           session.send(JSON.stringify(helpers.findMessage('cardWithText', messages)));
           break;
-        case '6':
+        case 'Card without text':
           session.send(JSON.stringify(helpers.findMessage('cardWithoutText', messages)));
           break;
-        case '7':
+        case 'Card with buttons':
           session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));
           break;
-        case '8':
+        case 'Image':
           session.send(JSON.stringify(helpers.findMessage('image', messages)));
           break;
-        case '9':
+        case 'Typing':
           session.send(JSON.stringify(helpers.findMessage('typing', messages)));
           break;
         case '10':
@@ -105,7 +105,7 @@ bot.dialog('/', [
         case '11':
           session.send(JSON.stringify(helpers.findMessage('spinner', messages)));
           break;
-        case '12':
+        case 'Carousel':
           session.send(JSON.stringify(helpers.findMessage('carousel', messages)));
           break;
         case '13':
