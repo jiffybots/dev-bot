@@ -121,7 +121,7 @@ bot.dialog('/', [
     } else {
       return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
     }
-    session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Type "test" to try another message' }));
+    session.endDialog(JSON.stringify({ type: 'text', prompt: 0, text: 'Say anything to try another message type' }));
     // delete address.conversation;
     // session.replaceDialog('/main');
   },
