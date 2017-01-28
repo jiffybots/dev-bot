@@ -146,7 +146,7 @@ bot.dialog('/themeChanger', [
         type: 'globalAction',
         action: {
           type: 'setCustomColor',
-          color: 'goldenrod',
+          color: result.response,
         },
         prompt: '0',
         text: `${results.response} coming right up!`,
