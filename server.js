@@ -149,7 +149,7 @@ bot.dialog('/themeChanger', [
           color: results.response,
         },
         prompt: '0',
-        text: `${results.response} coming right up!`,
+        text: `${results.response.charAt(0).toUpperCase() + results.response.slice(1)} coming right up!`,
       }));
     } else {
       return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
