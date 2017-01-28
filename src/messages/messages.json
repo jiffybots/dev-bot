@@ -132,5 +132,14 @@
         "src": "https://www.google.com"
       }
     ]
+  },
+  {
+    "type": "globalAction",
+    "action": {
+      "type": "setCustomColor",
+      "color": "goldenrod"
+    },
+    "prompt": "0",
+    "text": "Goldenrod coming right up!"
   }
 ]

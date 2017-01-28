@@ -127,6 +127,36 @@ bot.dialog('/', [
   },
 ]).triggerAction({ matches: /test/i });
 
+
+bot.dialog('/themeChanger', [
+  (session, args, next) => {
+    console.info('connected to theme changer dialog');
+
+    const textPrompt = {
+      type: 'text',
+      text: `What's your favorite color?`,
+      prompt: 0,
+    };
+
+    builder.Prompts.text(session, JSON.stringify(textPrompt));
+  },
+  (session, results, next) => {
+    if (results.response) {
+      session.endDialog(JSON.stringify({
+        type: 'globalAction',
+        action: {
+          type: 'setCustomColor',
+          color: 'goldenrod',
+        },
+        prompt: '0',
+        text: `${results.response} coming right up!`,
+      }));
+    } else {
+      return session.endDialog(`I hear birds chirping. You can restart by typing "test"`);
+    }
+  },
+]).triggerAction({ matches: /color/i });
+
 // Listen on port 3978
 botServer.listen(port, (error) => {
   if (error) {
