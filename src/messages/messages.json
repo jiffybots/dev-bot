@@ -36,11 +36,11 @@
     "type": "cardWithText",
     "prompt": "0",
     "image": {
-      "url": "http://rightsinfo.org/app/uploads/2015/11/righttolife.jpg",
-      "title": "Feel life"
+      "url": "garrett_temple.png",
+      "title": "Garrett Temple"
     },
-    "src": "https://www.google.com",
-    "text": "Today I choose to feel life, not to deny my humanity but embrace it."
+    "text": "Garrett Temple holds career averages of 3.5 points, 1.5 rebounds and 1.1 assists in 229 career NBA games.",
+    "src": "http://www.nba.com/kings/roster/garrett-temple"
   },
   {
     "type": "cardWithoutText",
@@ -55,25 +55,25 @@
   {
     "type": "cardWithButtons",
     "image": {
-      "url": "https://d19n1ren9crl9v.cloudfront.net/wp-content/uploads/2015/09/bigstock-Modern-Keyboard-With-Colored-S-68403502-1024x683.jpg",
-      "title": "What's your favorite media site?"
+      "url": "purple-crown-logo.png",
+      "title": "Who's your favorite Kings player?"
     },
     "prompt": "1",
     "choices": [
-      { "id": "1", "type": "text", "color": "light", "text": "Facebook" },
-      { "id": "2", "type": "text", "color": "light", "text": "Twitter" },
-      { "id": "3", "type": "text", "color": "light", "text": "Instagram" },
-      { "id": "4", "type": "text", "color": "light", "text": "None" }
+      { "id": "1", "type": "text", "color": "light", "text": "Demarcus Cousins" },
+      { "id": "2", "type": "text", "color": "light", "text": "Ty Lawson" },
+      { "id": "3", "type": "text", "color": "light", "text": "Garrett Temple" },
+      { "id": "4", "type": "text", "color": "light", "text": "Other" }
     ]
   },
   {
     "type": "image",
     "prompt": "0",
     "image": {
-      "url": "https://ph-files.imgix.net/06554609-e156-4498-8f55-a32fefb9f829?auto=format&fit=crop&h=240&w=440",
-      "title": "Preethi Kasireddy"
+      "url": "demarcus_cousins.png",
+      "title": "Demarcus Cousins"
     },
-    "src": "http://preethikasireddy.me"
+    "src": "http://www.nba.com/kings/roster/demarcus_cousins"
   },
   {
     "type": "typing",
@@ -105,31 +105,31 @@
         "type": "cardWithText",
         "prompt": "0",
         "image": {
-          "url": "http://www.drodd.com/images15/nature31.jpg",
-          "title": "Feel life"
+          "url": "demarcus_cousins.png",
+          "title": "Demarcus Cousins"
         },
-        "text": "Today I choose to feel life, not to deny my humanity but embrace it.",
-        "src": "https://www.google.com"
+        "text": "Demarcus Cousins is averaging 20.2 ppg (.460 FG%, .290 3pt%, .728 FT%), 10.8 rpg, 2.7 apg, 1.4 spg, 1.2 bpg and 31.6 mpg in 415 career games (started 393) in six seasons with Sacramento (2010-11 – 2015-16).",
+        "src": "http://www.nba.com/kings/roster/demarcus_cousins"
       },
       {
         "type": "cardWithText",
         "prompt": "0",
         "image": {
-          "url": "https://s-media-cache-ak0.pinimg.com/564x/08/6d/95/086d958e4de97fb50a7608ae80939aa0.jpg",
-          "title": "Let's be productive"
+          "url": "aaron_afflalo.png",
+          "title": "Aaron Afflalo"
         },
-        "text": "Remember, work smarter and not harder. Quality and depth over quantity.",
-        "src": "https://www.google.com"
+        "text": "Aaron Afflalo is averaging 11.6 ppg (.452 FG%, .385 3pt%, .820 FT%), 3.1 rpg, 2.0 apg, 28.7 mpg in 648 career games (started 489) in nine NBA seasons with five teams.",
+        "src": "http://www.nba.com/kings/roster/arron-afflalo"
       },
       {
         "type": "cardWithText",
         "prompt": "0",
         "image": {
-          "url": "https://ph-files.imgix.net/06554609-e156-4498-8f55-a32fefb9f829?auto=format&fit=crop&h=240&w=440",
-          "title": "Nothing is worth more than this day"
+          "url": "darron_collison.png",
+          "title": "Darron Collison"
         },
-        "text": "Preethi is a ballllllerrrrrr",
-        "src": "https://www.google.com"
+        "text": "Darron Collison is averaging 12.6 ppg (.468 FG%, .374 3pt%, .851 FT%), 2.7 rpg, 4.9 apg, 1.1 spg, 29.4 mpg in 495 career games (started 314) in seven seasons with five teams.",
+        "src": "http://www.nba.com/kings/roster/darren_collison"
       }
     ]
   },
