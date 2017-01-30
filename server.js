@@ -61,6 +61,7 @@ bot.dialog('/', [
         { id: '12', type: 'text', color: 'light', text: 'Carousel' },
         // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
         // { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
+        { id: '15', type: 'text', color: 'light', text: 'Video' },
       ],
     };
     let currentChoices = quickReplyOptions.choices;
@@ -113,6 +114,9 @@ bot.dialog('/', [
           break;
         case '14':
           session.send(JSON.stringify(helpers.findMessage('error403', messages)));
+          break;
+        case 'Video':
+          session.send(JSON.stringify(helpers.findMessage('video', messages)));
           break;
         default:
           session.send(JSON.stringify(helpers.findMessage('text', messages)));

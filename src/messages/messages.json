@@ -140,5 +140,13 @@
     },
     "prompt": "0",
     "text": "Goldenrod coming right up!"
+  },
+  {
+    "type": "video",
+    "video": {
+      "url": "https://youtu.be/Z_THEbbnifY",
+      "title": "Kings vs Pacers Highlights (1/27/17)"
+    },
+    "prompt": "0"
   }
 ]
