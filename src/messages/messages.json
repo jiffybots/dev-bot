@@ -55,15 +55,14 @@
   {
     "type": "cardWithButtons",
     "image": {
-      "url": "purple-crown-logo.png",
+      "url": "purple-crown-logo.jpg",
       "title": "Who's your favorite Kings player?"
     },
     "prompt": "1",
     "choices": [
       { "id": "1", "type": "text", "color": "light", "text": "Demarcus Cousins" },
       { "id": "2", "type": "text", "color": "light", "text": "Ty Lawson" },
-      { "id": "3", "type": "text", "color": "light", "text": "Garrett Temple" },
-      { "id": "4", "type": "text", "color": "light", "text": "Other" }
+      { "id": "3", "type": "text", "color": "light", "text": "Garrett Temple" }
     ]
   },
   {
