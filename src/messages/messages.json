@@ -46,9 +46,9 @@
     "type": "cardWithoutText",
     "prompt": "0",
     "image": {
-      "url": "http://www.imgion.com/images/02/Morning-wishes-with-healthy-meall.jpg",
-      "title": "Nothing is worth more than this day",
-      "subtitle": "By: Some poet"
+      "url": "garrett_temple.png",
+      "title": "Garrett Temple",
+      "subtitle": "Temple is awesome"
     },
     "src": "https://www.google.com"
   },
