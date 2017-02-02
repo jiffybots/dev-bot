@@ -131,6 +131,85 @@ bot.dialog('/', [
   },
 ]).triggerAction({ matches: /test/i });
 
+bot.dialog('/text', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('text', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /text/i });
+
+bot.dialog('/qr2', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('quickReplyTwoChoices', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /qr2/i });
+
+bot.dialog('/qr', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('quickReply', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /qr/i });
+
+bot.dialog('/card1', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('cardWithDescription', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /card1/i });
+
+bot.dialog('/card2', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('cardWithoutDescription', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /card2/i });
+
+bot.dialog('/card3', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /card3/i });
+
+bot.dialog('/image', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('image', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /image/i });
+
+bot.dialog('/typing', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('typing', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /typing/i });
+
+bot.dialog('/carousel', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('carousel', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /carousel/i });
+
+bot.dialog('/video', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('video', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /video/i });
 
 bot.dialog('/themeChanger', [
   (session, args, next) => {
