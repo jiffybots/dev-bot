@@ -51,8 +51,8 @@ bot.dialog('/', [
         { id: '2', type: 'text', color: 'light', text: 'Quick reply - 3+ choices' },
         { id: '3', type: 'text', color: 'light', text: 'Quick reply - 2 choices' },
         // { id: '4', type: 'text', color: 'light', text: 'Button - yes/no' },
-        { id: '5', type: 'text', color: 'light', text: 'Card with text' },
-        { id: '6', type: 'text', color: 'light', text: 'Card without text' },
+        { id: '5', type: 'text', color: 'light', text: 'Card with description' },
+        { id: '6', type: 'text', color: 'light', text: 'Card without description' },
         { id: '7', type: 'text', color: 'light', text: 'Card with buttons' },
         { id: '8', type: 'text', color: 'light', text: 'Image' },
         { id: '9', type: 'text', color: 'light', text: 'Typing' },
@@ -85,11 +85,11 @@ bot.dialog('/', [
         case '4':
           session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));
           break;
-        case 'Card with text':
-          session.send(JSON.stringify(helpers.findMessage('cardWithText', messages)));
+        case 'Card with description':
+          session.send(JSON.stringify(helpers.findMessage('cardWithDescription', messages)));
           break;
-        case 'Card without text':
-          session.send(JSON.stringify(helpers.findMessage('cardWithoutText', messages)));
+        case 'Card without description':
+          session.send(JSON.stringify(helpers.findMessage('cardWithoutDescription', messages)));
           break;
         case 'Card with buttons':
           session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));

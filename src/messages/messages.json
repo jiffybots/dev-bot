@@ -33,7 +33,7 @@
     ]
   },
   {
-    "type": "cardWithText",
+    "type": "cardWithDescription",
     "prompt": "0",
     "image": {
       "url": "garrett_temple.png",
@@ -43,7 +43,7 @@
     "src": "http://www.nba.com/kings/roster/garrett-temple"
   },
   {
-    "type": "cardWithoutText",
+    "type": "cardWithoutDescription",
     "prompt": "0",
     "image": {
       "url": "garrett_temple.png",
