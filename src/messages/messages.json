@@ -25,6 +25,16 @@
     ]
   },
   {
+    "type": "quickReplyMenu",
+    "prompt": "1",
+    "text": "Happy to help! Here's some quick options to get started:",
+    "choices": [
+      { "id": "1", "type": "text", "color": "dark", "text": "Menu" },
+      { "id": "2", "type": "text", "color": "dark", "text": "About" },
+      { "id": "3", "type": "text", "color": "dark", "text": "Commands" }
+    ]
+  },
+  {
     "type": "buttonYesNo",
     "prompt": "1",
     "choices": [

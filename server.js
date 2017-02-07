@@ -50,6 +50,7 @@ bot.dialog('/', [
         { id: '1', type: 'text', color: 'light', text: 'Text' },
         { id: '2', type: 'text', color: 'light', text: 'Quick reply - 3+ choices' },
         { id: '3', type: 'text', color: 'light', text: 'Quick reply - 2 choices' },
+        { id: '4', type: 'text', color: 'light', text: 'Quick reply menu' },
         // { id: '4', type: 'text', color: 'light', text: 'Button - yes/no' },
         { id: '5', type: 'text', color: 'light', text: 'Card with description' },
         { id: '6', type: 'text', color: 'light', text: 'Card without description' },
@@ -81,6 +82,9 @@ bot.dialog('/', [
           break;
         case 'Quick reply - 2 choices':
           session.send(JSON.stringify(helpers.findMessage('quickReplyTwoChoices', messages)));
+          break;
+        case 'Quick reply menu':
+          session.send(JSON.stringify(helpers.findMessage('quickReplyMenu', messages)));
           break;
         case '4':
           session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));
@@ -151,6 +155,14 @@ bot.dialog('/qr', [
   (session, args, next) => {
     session.clearDialogStack();
     session.send(JSON.stringify(helpers.findMessage('quickReply', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /qr/i });
+
+bot.dialog('/qr3', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('quickReplyMenu', messages)));
     session.endDialog();
   },
 ]).triggerAction({ matches: /qr/i });
