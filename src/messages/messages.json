@@ -9,9 +9,9 @@
     "prompt": "1",
     "text": "Today I choose life. What do you choose?",
     "choices": [
-      { "id": "1", "type": "text", "color": "light", "text": "joy" },
-      { "id": "2", "type": "text", "color": "light", "text": "happiness" },
-      { "id": "3", "type": "text", "color": "light", "text": "depression" },
+      { "id": "1", "type": "postBack", "color": "light", "text": "joy" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "happiness" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "depression" },
       { "id": "4", "type": "url", "color": "light", "text": "other", "src": "https://www.google.com" }
     ]
   },
@@ -20,8 +20,8 @@
     "prompt": "1",
     "text": "Would you like to continue?",
     "choices": [
-      { "id": "1", "type": "text", "color": "light", "text": "Sure" },
-      { "id": "2", "type": "text", "color": "light", "text": "Nope" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Sure" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Nope" }
     ]
   },
   {
@@ -29,17 +29,17 @@
     "prompt": "1",
     "text": "Happy to help! Here's some quick options to get started:",
     "choices": [
-      { "id": "1", "type": "text", "color": "light", "text": "Menu" },
-      { "id": "2", "type": "text", "color": "light", "text": "About" },
-      { "id": "3", "type": "text", "color": "light", "text": "Commands" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Menu" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "About" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Commands" }
     ]
   },
   {
     "type": "buttonYesNo",
     "prompt": "1",
     "choices": [
-      { "id": "1", "type": "text", "color": "dark", "text": "yes" },
-      { "id": "2", "type": "text", "color": "dark", "text": "no" }
+      { "id": "1", "type": "postBack", "color": "dark", "text": "yes" },
+      { "id": "2", "type": "postBack", "color": "dark", "text": "no" }
     ]
   },
   {
@@ -70,9 +70,9 @@
     },
     "prompt": "1",
     "choices": [
-      { "id": "1", "type": "text", "color": "light", "text": "Demarcus Cousins" },
-      { "id": "2", "type": "text", "color": "light", "text": "Ty Lawson" },
-      { "id": "3", "type": "text", "color": "light", "text": "Garrett Temple" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Demarcus Cousins" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Ty Lawson" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Garrett Temple" }
     ]
   },
   {
