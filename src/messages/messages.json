@@ -12,7 +12,7 @@
       { "id": "1", "type": "text", "color": "light", "text": "joy" },
       { "id": "2", "type": "text", "color": "light", "text": "happiness" },
       { "id": "3", "type": "text", "color": "light", "text": "depression" },
-      { "id": "4", "type": "text", "color": "light", "text": "love" }
+      { "id": "4", "type": "url", "color": "light", "text": "other", "src": "https://www.google.com" }
     ]
   },
   {
