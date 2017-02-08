@@ -143,14 +143,6 @@ bot.dialog('/text', [
   },
 ]).triggerAction({ matches: /text/i });
 
-bot.dialog('/qr2', [
-  (session, args, next) => {
-    session.clearDialogStack();
-    session.send(JSON.stringify(helpers.findMessage('quickReplyTwoChoices', messages)));
-    session.endDialog();
-  },
-]).triggerAction({ matches: /qr2/i });
-
 bot.dialog('/qr', [
   (session, args, next) => {
     session.clearDialogStack();
@@ -159,13 +151,21 @@ bot.dialog('/qr', [
   },
 ]).triggerAction({ matches: /qr/i });
 
+bot.dialog('/qr2', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('quickReplyTwoChoices', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /qr2/i });
+
 bot.dialog('/qr3', [
   (session, args, next) => {
     session.clearDialogStack();
     session.send(JSON.stringify(helpers.findMessage('quickReplyMenu', messages)));
     session.endDialog();
   },
-]).triggerAction({ matches: /qr/i });
+]).triggerAction({ matches: /qr3/i });
 
 bot.dialog('/card1', [
   (session, args, next) => {
