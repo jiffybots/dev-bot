@@ -46,17 +46,17 @@
     "type": "cardWithDescription",
     "prompt": "0",
     "image": {
-      "url": "garrett_temple.png",
+      "url": "https://kings-web.s3-us-west-1.amazonaws.com/garrett_temple.png",
       "title": "Garrett Temple"
     },
     "text": "Garrett Temple holds career averages of 3.5 points, 1.5 rebounds and 1.1 assists in 229 career NBA games.",
-    "src": "http://www.nba.com/kings/roster/garrett-temple"
+    "src": "https://www.nba.com/kings/roster/garrett-temple"
   },
   {
     "type": "cardWithoutDescription",
     "prompt": "0",
     "image": {
-      "url": "garrett_temple.png",
+      "url": "https://kings-web.s3-us-west-1.amazonaws.com/garrett_temple.png",
       "title": "Garrett Temple",
       "subtitle": "Temple is awesome"
     },
@@ -65,7 +65,7 @@
   {
     "type": "cardWithButtons",
     "image": {
-      "url": "purple-crown-logo.jpg",
+      "url": "https://kings-web.s3-us-west-1.amazonaws.com/purple-crown-logo.jpg",
       "title": "Who's your favorite Kings player?"
     },
     "prompt": "1",
@@ -79,7 +79,7 @@
     "type": "image",
     "prompt": "0",
     "image": {
-      "url": "demarcus_cousins.png",
+      "url": "https://kings-web.s3-us-west-1.amazonaws.com/demarcus_cousins.png",
       "title": "Demarcus Cousins"
     },
     "src": "http://www.nba.com/kings/roster/demarcus_cousins"
@@ -114,7 +114,7 @@
         "type": "cardWithText",
         "prompt": "0",
         "image": {
-          "url": "demarcus_cousins.png",
+          "url": "https://kings-web.s3-us-west-1.amazonaws.com/demarcus_cousins.png",
           "title": "Demarcus Cousins"
         },
         "text": "Demarcus Cousins is averaging 20.2 ppg, 10.8 rpg, 2.7 apg, 1.4 spg, 1.2 bpg and 31.6 mpg in 415 career games.",
@@ -124,7 +124,7 @@
         "type": "cardWithText",
         "prompt": "0",
         "image": {
-          "url": "aaron_afflalo.png",
+          "url": "https://kings-web.s3-us-west-1.amazonaws.com/aaron_afflalo.png",
           "title": "Aaron Afflalo"
         },
         "text": "Aaron Afflalo is averaging 11.6 ppg, 3.1 rpg, 2.0 apg, 28.7 mpg in 648 career games.",
@@ -134,7 +134,7 @@
         "type": "cardWithText",
         "prompt": "0",
         "image": {
-          "url": "darren_collison.png",
+          "url": "https://kings-web.s3-us-west-1.amazonaws.com/darren_collison.png",
           "title": "Darron Collison"
         },
         "text": "Darron Collison is averaging 12.6 ppg, 2.7 rpg, 4.9 apg, 1.1 spg, 29.4 mpg in 495 career games.",
