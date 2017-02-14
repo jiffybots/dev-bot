@@ -226,7 +226,7 @@ bot.dialog('/video', [
 bot.dialog('/about', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify(helpers.findMessage('persistentMenu', messages)));
+    session.send(JSON.stringify(helpers.findMessage('persistentMenu', messages).about));
     session.endDialog();
   },
 ]).triggerAction({ matches: /about/i });
