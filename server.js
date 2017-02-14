@@ -223,6 +223,14 @@ bot.dialog('/video', [
   },
 ]).triggerAction({ matches: /video/i });
 
+bot.dialog('/about', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('persistentMenu', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /about/i });
+
 bot.dialog('/themeChanger', [
   (session, args, next) => {
     console.info('connected to theme changer dialog');
