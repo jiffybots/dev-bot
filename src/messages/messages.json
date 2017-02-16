@@ -170,7 +170,11 @@
     "type": "video",
     "video": {
       "url": "https://youtu.be/Z_THEbbnifY",
-      "title": "Kings vs Pacers Highlights (1/27/17)"
+      "title": "Kings vs Pacers Highlights (1/27/17)",
+      "metadata": {
+        "likes": 34,
+        "shares": 30
+      }
     },
     "prompt": "0"
   },
