@@ -234,7 +234,7 @@ bot.dialog('/about', [
 bot.dialog('/roster', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify(helpers.findMessage('roster', messages).about));
+    session.send(JSON.stringify(helpers.findMessage('roster', messages)));
     session.endDialog();
   },
 ]).triggerAction({ matches: /roster/i });
