@@ -57,7 +57,7 @@ bot.dialog('/', [
         { id: '7', type: 'postBack', color: 'light', text: 'Card with buttons' },
         { id: '8', type: 'postBack', color: 'light', text: 'Image' },
         { id: '9', type: 'postBack', color: 'light', text: 'Typing' },
-        // { id: '10', type: 'text', color: 'light', text: 'End typing' },
+        { id: '10', type: 'postBack', color: 'light', text: 'Roster' },
         // { id: '11', type: 'text', color: 'light', text: 'Spinner' },
         { id: '12', type: 'postBack', color: 'light', text: 'Carousel' },
         // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
@@ -104,8 +104,8 @@ bot.dialog('/', [
         case 'Typing':
           session.send(JSON.stringify(helpers.findMessage('typing', messages)));
           break;
-        case '10':
-          session.send(JSON.stringify(helpers.findMessage('endTyping', messages)));
+        case 'Roster':
+          session.send(JSON.stringify(helpers.findMessage('roster', messages)));
           break;
         case '11':
           session.send(JSON.stringify(helpers.findMessage('spinner', messages)));
@@ -230,6 +230,14 @@ bot.dialog('/about', [
     session.endDialog();
   },
 ]).triggerAction({ matches: /about/i });
+
+bot.dialog('/roster', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('roster', messages).about));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /roster/i });
 
 bot.dialog('/themeChanger', [
   (session, args, next) => {

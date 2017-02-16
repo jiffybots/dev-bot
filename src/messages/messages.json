@@ -43,6 +43,27 @@
     ]
   },
   {
+    "type": "roster",
+    "prompt": "1",
+    "choices": [
+      { "id": "1", "type": "postBack", "color": "light", "text": "Arron Afflalo" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Matt Barnes" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Demarcus Cousins" },
+      { "id": "4", "type": "postBack", "color": "light", "text": "Omri Casspi" },
+      { "id": "5", "type": "postBack", "color": "light", "text": "Darren Collinson" },
+      { "id": "6", "type": "postBack", "color": "light", "text": "Willie Couley-Stein" },
+      { "id": "7", "type": "postBack", "color": "light", "text": "Rudy Gay" },
+      { "id": "8", "type": "postBack", "color": "light", "text": "Kosta Koufos" },
+      { "id": "9", "type": "postBack", "color": "light", "text": "Skal Labissieri" },
+      { "id": "10", "type": "postBack", "color": "light", "text": "Ty Lawson" },
+      { "id": "11", "type": "postBack", "color": "light", "text": "Ben McLemore" },
+      { "id": "12", "type": "postBack", "color": "light", "text": "Georgios Papagiannis" },
+      { "id": "13", "type": "postBack", "color": "light", "text": "Malachi Richardson" },
+      { "id": "14", "type": "postBack", "color": "light", "text": "Garrett Temple" },
+      { "id": "15", "type": "postBack", "color": "light", "text": "Anthony Tolliver" }
+    ]
+  },
+  {
     "type": "cardWithDescription",
     "prompt": "0",
     "image": {
