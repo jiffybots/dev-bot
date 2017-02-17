@@ -235,8 +235,10 @@ bot.dialog('/roster', [
   (session, args, next) => {
     session.clearDialogStack();
     session.send(JSON.stringify({ type: 'text', prompt: 0, text: 'Pick a player to get started!' }));
-    session.send(JSON.stringify(helpers.findMessage('roster', messages)));
-    session.endDialog();
+    setTimeout(() => {
+      session.send(JSON.stringify(helpers.findMessage('roster', messages)));
+      session.endDialog();
+    }, 2000);
   },
 ]).triggerAction({ matches: /roster/i });
 
