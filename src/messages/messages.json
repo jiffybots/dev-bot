@@ -88,12 +88,12 @@
     "prompt": "0",
     "team1": {
       "score": "42",
-      "logoSrc": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,w_180/v1487624652/sacramento_kings_logo_q5nrch.png",
+      "logo": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,w_180/v1487624652/sacramento_kings_logo_q5nrch.png",
       "initials": "SAC"
     },
     "team2": {
       "score": "33",
-      "logoSrc": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,w_180/v1487624652/Golden_State_Warriors_logo.svg_fleehn.png",
+      "logo": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,w_180/v1487624652/Golden_State_Warriors_logo.svg_fleehn.png",
       "initials": "GST"
     },
     "metadata": {

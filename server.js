@@ -58,7 +58,7 @@ bot.dialog('/', [
         { id: '8', type: 'postBack', color: 'light', text: 'Image' },
         { id: '9', type: 'postBack', color: 'light', text: 'Typing' },
         { id: '10', type: 'postBack', color: 'light', text: 'Roster' },
-        // { id: '11', type: 'text', color: 'light', text: 'Spinner' },
+        { id: '11', type: 'postBack', color: 'light', text: 'Live score card' },
         { id: '12', type: 'postBack', color: 'light', text: 'Carousel' },
         // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
         // { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
@@ -106,6 +106,9 @@ bot.dialog('/', [
           break;
         case 'Roster':
           session.send(JSON.stringify(helpers.findMessage('roster', messages)));
+          break;
+        case 'Live score card':
+          session.send(JSON.stringify(helpers.findMessage('liveScoreCard', messages)));
           break;
         case '11':
           session.send(JSON.stringify(helpers.findMessage('spinner', messages)));
@@ -241,6 +244,14 @@ bot.dialog('/roster', [
     }, 2000);
   },
 ]).triggerAction({ matches: /roster/i });
+
+bot.dialog('/liveScoreCard', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('liveScoreCard', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /livescore/i });
 
 bot.dialog('/themeChanger', [
   (session, args, next) => {
