@@ -251,7 +251,7 @@ bot.dialog('/liveScoreCard', [
     session.send(JSON.stringify(helpers.findMessage('liveScoreCard', messages)));
     session.endDialog();
   },
-]).triggerAction({ matches: /livescore/i });
+]).triggerAction({ matches: /(live|game|score).*/i });
 
 bot.dialog('/themeChanger', [
   (session, args, next) => {
