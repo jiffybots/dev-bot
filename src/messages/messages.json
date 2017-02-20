@@ -84,6 +84,24 @@
     "src": "https://www.google.com"
   },
   {
+    "type": "liveScoreCard",
+    "prompt": "0",
+    "team1": {
+      "score": "42",
+      "logoSrc": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,w_180/v1487624652/sacramento_kings_logo_q5nrch.png",
+      "initials": "SAC"
+    },
+    "team2": {
+      "score": "33",
+      "logoSrc": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,w_180/v1487624652/Golden_State_Warriors_logo.svg_fleehn.png",
+      "initials": "GST"
+    },
+    "metadata": {
+      "period": "3",
+      "minutesRemaining": "11:32"
+    }
+  },
+  {
     "type": "cardWithButtons",
     "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/purple-crown-logo.jpg",
@@ -139,7 +157,6 @@
           "title": "Demarcus Cousins"
         },
         "text": "Demarcus Cousins is averaging 20.2 ppg, 10.8 rpg, 2.7 apg, 1.4 spg, 1.2 bpg and 31.6 mpg in 415 career games.",
-        "src": "http://www.nba.com/kings/roster/demarcus_cousins",
         "choices": [
           { "id": "1", "type": "postBack", "color": "light", "text": "Game stats" },
           { "id": "2", "type": "postBack", "color": "light", "text": "About" },
@@ -154,7 +171,6 @@
           "title": "Aaron Afflalo"
         },
         "text": "Aaron Afflalo is averaging 11.6 ppg, 3.1 rpg, 2.0 apg, 28.7 mpg in 648 career games.",
-        "src": "http://www.nba.com/kings/roster/arron-afflalo",
         "choices": [
           { "id": "1", "type": "postBack", "color": "light", "text": "Game stats" },
           { "id": "2", "type": "postBack", "color": "light", "text": "About" },
@@ -169,7 +185,6 @@
           "title": "Darron Collison"
         },
         "text": "Darron Collison is averaging 12.6 ppg, 2.7 rpg, 4.9 apg, 1.1 spg, 29.4 mpg in 495 career games.",
-        "src": "http://www.nba.com/kings/roster/darren_collison",
         "choices": [
           { "id": "1", "type": "postBack", "color": "light", "text": "Game stats" },
           { "id": "2", "type": "postBack", "color": "light", "text": "About" },
