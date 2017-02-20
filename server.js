@@ -16,8 +16,8 @@ const messages = require('./src/messages/messages.json');
 const connector = new builder.ChatConnector({
   appId: process.env.MICROSOFT_APP_ID,
   appPassword: process.env.MICROSOFT_APP_PASSWORD
-  // appId: "321b1ef0-b31e-474b-bc0b-4dffcea4c199",
-  // appPassword: "M3a2PkFtJNeBnquU6M2FC3y"
+  // appId: "b4356e44-0657-4928-867b-d5db9510eb3c",
+  // appPassword: "tRBptiWo14uyhbqk7fYVJXZ"
 });
 
 botServer.post('/api/messages', connector.listen());
