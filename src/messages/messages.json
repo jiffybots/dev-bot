@@ -102,6 +102,29 @@
     }
   },
   {
+    "type": "playerCard",
+    "prompt": "0",
+    "metadata": {
+      "name": "Darren Collison",
+      "number": "7",
+      "position": "Guard",
+      "height": {
+        "feet": "6",
+        "inches": "0"
+      },
+      "college": "UCLA",
+      "drafted": "2009",
+      "stats": {
+        "PPG": "12.6",
+        "RPG": "2.7",
+        "APG": "4.9",
+        "SPG": "1.1",
+        "MPG": "29.4"
+      }
+    },
+    "src": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,h_500/v1487711231/darren_collison_action_vtceut.png"
+  },
+  {
     "type": "cardWithButtons",
     "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/purple-crown-logo.jpg",

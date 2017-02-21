@@ -59,7 +59,8 @@ bot.dialog('/', [
         { id: '9', type: 'postBack', color: 'light', text: 'Typing' },
         { id: '10', type: 'postBack', color: 'light', text: 'Roster' },
         { id: '11', type: 'postBack', color: 'light', text: 'Live score card' },
-        { id: '12', type: 'postBack', color: 'light', text: 'Carousel' },
+        { id: '12', type: 'postBack', color: 'light', text: 'Player card' },
+        { id: '13', type: 'postBack', color: 'light', text: 'Carousel' },
         // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
         // { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
         { id: '15', type: 'postBack', color: 'light', text: 'Video' },
@@ -109,6 +110,9 @@ bot.dialog('/', [
           break;
         case 'Live score card':
           session.send(JSON.stringify(helpers.findMessage('liveScoreCard', messages)));
+          break;
+        case 'Player card':
+          session.send(JSON.stringify(helpers.findMessage('playerCard', messages)));
           break;
         case '11':
           session.send(JSON.stringify(helpers.findMessage('spinner', messages)));
@@ -252,6 +256,14 @@ bot.dialog('/liveScoreCard', [
     session.endDialog();
   },
 ]).triggerAction({ matches: /(live|game|score).*/i });
+
+bot.dialog('/playerCard', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('playerCard', messages)));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /(collison|player).*/i });
 
 bot.dialog('/themeChanger', [
   (session, args, next) => {
