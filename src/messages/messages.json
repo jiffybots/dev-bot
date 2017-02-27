@@ -65,13 +65,16 @@
   },
   {
     "type": "cardWithDescription",
-    "prompt": "0",
+    "prompt": "1",
     "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/garrett_temple.png",
       "title": "Garrett Temple"
     },
     "text": "Garrett Temple holds career averages of 3.5 points, 1.5 rebounds and 1.1 assists in 229 career NBA games.",
-    "src": "https://www.nba.com/kings/roster/garrett-temple"
+    "src": "https://www.nba.com/kings/roster/garrett-temple",
+    "choices": [
+      { "id": "1", "type": "postBack", "color": "light", "text": "Learn more" }
+    ]
   },
   {
     "type": "cardWithoutDescription",
