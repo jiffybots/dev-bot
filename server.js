@@ -265,6 +265,30 @@ bot.dialog('/playerCard', [
   },
 ]).triggerAction({ matches: /(collison|player).*/i });
 
+bot.dialog('/nbaStart', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify({ 
+      type: 'text',
+      prompt: 0,
+      text: 'Ask me about your favorite player or team'
+    }));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /(nbastart|start).*/i });
+
+bot.dialog('/nbaResponsePoints', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify({ 
+      type: 'text',
+      prompt: 0,
+      text: 'Kevin Durant scored 22 points against the Kings last night'
+    }));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /(points).*/i });
+
 bot.dialog('/themeChanger', [
   (session, args, next) => {
     console.info('connected to theme changer dialog');
