@@ -268,7 +268,7 @@ bot.dialog('/playerCard', [
 bot.dialog('/nbaStart', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify({ 
+    session.send(JSON.stringify({
       type: 'text',
       prompt: 0,
       text: 'Ask me about your favorite player or team'
@@ -280,12 +280,15 @@ bot.dialog('/nbaStart', [
 bot.dialog('/nbaResponsePoints', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify({ 
-      type: 'text',
-      prompt: 0,
-      text: 'Kevin Durant scored 22 points against the Kings last night'
-    }));
-    session.endDialog();
+    session.send(JSON.stringify(helpers.findMessage('typing', messages)));
+    setTimeout(() => {
+      session.send(JSON.stringify({
+        type: 'text',
+        prompt: 0,
+        text: 'Kevin Durant scored 22 points against the Kings last night'
+      }));
+      session.endDialog();
+    }, 800);
   },
 ]).triggerAction({ matches: /(points).*/i });
 
