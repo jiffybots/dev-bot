@@ -295,6 +295,21 @@ bot.dialog('/nbaResponsePoints', [
   },
 ]).triggerAction({ matches: /(points).*/i });
 
+bot.dialog('/nbaResponseGay', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify(helpers.findMessage('typing', messages)));
+    setTimeout(() => {
+      session.send(JSON.stringify({
+        type: 'text',
+        prompt: 0,
+        text: 'Rudy Gay is a 6-foot-8 forward from UCONN, drafted 8th overall by the Rockets in 2006. He was named to the 2006-07 All-Rookie First Team.'
+      }));
+      session.endDialog();
+    }, 800);
+  },
+]).triggerAction({ matches: /(gay|rudy|rudy gay).*/i });
+
 bot.dialog('/themeChanger', [
   (session, args, next) => {
     console.info('connected to theme changer dialog');
