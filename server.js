@@ -87,7 +87,14 @@ bot.dialog('/', [
           session.send(JSON.stringify(helpers.findMessage('quickReplyMenu', messages)));
           break;
         case 'Quick reply - choices only':
-          session.send(JSON.stringify(helpers.findMessage('quickReplyChoicesOnly', messages)));
+          session.send(JSON.stringify({
+            "type": "quickReply",
+            "prompt": "0",
+            "choices": [
+              { "id": "1", "type": "url", "color": "light", "text": "View profile", "src": "http://www.nba.com/kings/tickets" },
+              { "id": "2", "type": "postBack", "color": "light", "text": "Live stats" }
+            ]
+          }));
           break;
         case 'Card':
           session.send(JSON.stringify(helpers.findMessage('card', messages)));
