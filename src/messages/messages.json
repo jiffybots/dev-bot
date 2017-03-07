@@ -25,6 +25,14 @@
     ]
   },
   {
+    "type": "quickReplyChoicesOnly",
+    "prompt": "0",
+    "choices": [
+       { "id": "1", "type": "url", "color": "light", "text": "View profile", "src": "http://www.nba.com/kings/tickets" },
+       { "id": "2", "type": "postBack", "color": "light", "text": "Live stats" }
+    ]
+  },
+  {
     "type": "quickReplyMenu",
     "prompt": "1",
     "text": "Happy to help! Here's some quick options to get started:",
@@ -176,7 +184,7 @@
     "prompt": "0",
     "cards": [
       {
-        "type": "cardWithButtons",
+        "type": "card",
         "prompt": "1",
         "image": {
           "url": "http://res.cloudinary.com/sapien-ai/image/upload/c_crop,h_180,w_320/v1486953951/garrett_temple_wlyv6g.png",
@@ -190,7 +198,7 @@
         ]
       },
       {
-        "type": "cardWithButtons",
+        "type": "card",
         "prompt": "1",
         "image": {
           "url": "http://res.cloudinary.com/sapien-ai/image/upload/c_crop,h_180,w_320/v1486953951/aaron_afflalo_qnareb.png",
@@ -204,7 +212,7 @@
         ]
       },
       {
-        "type": "cardWithButtons",
+        "type": "card",
         "prompt": "1",
         "image": {
           "url": "http://res.cloudinary.com/sapien-ai/image/upload/c_crop,h_180,w_320/v1486953951/darren_collison_l4lnf9.png",
