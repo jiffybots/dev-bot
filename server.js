@@ -188,7 +188,7 @@ bot.dialog('/qr4', [
 bot.dialog('/card1', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify(helpers.findMessage('cardWithDescription', messages)));
+    session.send(JSON.stringify(helpers.findMessage('card', messages)));
     session.endDialog();
   },
 ]).triggerAction({ matches: /card1/i });
@@ -196,7 +196,7 @@ bot.dialog('/card1', [
 bot.dialog('/card2', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify(helpers.findMessage('cardWithoutDescription', messages)));
+    session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));
     session.endDialog();
   },
 ]).triggerAction({ matches: /card2/i });
@@ -204,10 +204,20 @@ bot.dialog('/card2', [
 bot.dialog('/card3', [
   (session, args, next) => {
     session.clearDialogStack();
-    session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));
+    session.send(JSON.stringify({
+    "type": "card",
+    "prompt": "0",
+    "image": {
+      "url": "https://kings-web.s3-us-west-1.amazonaws.com/garrett_temple.png",
+      "title": "Garrett Temple",
+      "subtitle": "Temple is awesome"
+    },
+    "src": "https://www.google.com"
+  }));
     session.endDialog();
   },
 ]).triggerAction({ matches: /card3/i });
+
 
 bot.dialog('/image', [
   (session, args, next) => {
