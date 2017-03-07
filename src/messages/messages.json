@@ -64,7 +64,7 @@
     ]
   },
   {
-    "type": "cardWithDescription",
+    "type": "card",
     "prompt": "1",
     "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/garrett_temple.png",
@@ -77,7 +77,20 @@
     ]
   },
   {
-    "type": "cardWithoutDescription",
+    "type": "cardWithButtons",
+    "image": {
+      "url": "https://kings-web.s3-us-west-1.amazonaws.com/purple-crown-logo.jpg",
+      "title": "Who's your favorite Kings player?"
+    },
+    "prompt": "1",
+    "choices": [
+      { "id": "1", "type": "postBack", "color": "light", "text": "Demarcus Cousins" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Ty Lawson" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Garrett Temple" }
+    ]
+  },
+  {
+    "type": "card",
     "prompt": "0",
     "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/garrett_temple.png",
@@ -87,7 +100,7 @@
     "src": "https://www.google.com"
   },
   {
-    "type": "liveScoreCard",
+    "i": "liveScoreCard",
     "prompt": "0",
     "team1": {
       "score": "42",
@@ -126,19 +139,6 @@
       }
     },
     "src": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,h_500/v1487718148/darren_collison_action_vtceut.png"
-  },
-  {
-    "type": "cardWithButtons",
-    "image": {
-      "url": "https://kings-web.s3-us-west-1.amazonaws.com/purple-crown-logo.jpg",
-      "title": "Who's your favorite Kings player?"
-    },
-    "prompt": "1",
-    "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "Demarcus Cousins" },
-      { "id": "2", "type": "postBack", "color": "light", "text": "Ty Lawson" },
-      { "id": "3", "type": "postBack", "color": "light", "text": "Garrett Temple" }
-    ]
   },
   {
     "type": "image",

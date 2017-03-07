@@ -52,8 +52,7 @@ bot.dialog('/', [
         { id: '3', type: 'postBack', color: 'light', text: 'Quick reply - 2 choices' },
         { id: '4', type: 'postBack', color: 'light', text: 'Quick reply menu' },
         // { id: '4', type: 'postBack', color: 'light', text: 'Button - yes/no' },
-        { id: '5', type: 'postBack', color: 'light', text: 'Card with description' },
-        { id: '6', type: 'postBack', color: 'light', text: 'Card without description' },
+        { id: '5', type: 'postBack', color: 'light', text: 'Card' },
         { id: '7', type: 'postBack', color: 'light', text: 'Card with buttons' },
         { id: '8', type: 'postBack', color: 'light', text: 'Image' },
         { id: '9', type: 'postBack', color: 'light', text: 'Typing' },
@@ -90,11 +89,8 @@ bot.dialog('/', [
         case '4':
           session.send(JSON.stringify(helpers.findMessage('buttonYesNo', messages)));
           break;
-        case 'Card with description':
-          session.send(JSON.stringify(helpers.findMessage('cardWithDescription', messages)));
-          break;
-        case 'Card without description':
-          session.send(JSON.stringify(helpers.findMessage('cardWithoutDescription', messages)));
+        case 'Card':
+          session.send(JSON.stringify(helpers.findMessage('card', messages)));
           break;
         case 'Card with buttons':
           session.send(JSON.stringify(helpers.findMessage('cardWithButtons', messages)));
