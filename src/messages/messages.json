@@ -256,6 +256,21 @@
       "type": "text",
       "prompt": "0",
       "text": "Hi Preethi! I'm KAI - Kings Artificial Intelligence. I was created to share updates and info about the team and Golden 1 Center. You can message me about players, live game stats, and even food!"
+    },
+    "main menu": {
+      "type": "text",
+      "prompt": "0",
+      "text": ""
+    },
+    "commands": {
+      "type": "text",
+      "prompt": "0",
+      "text": ""
+    },
+    "settings": {
+      "type": "text",
+      "prompt": "0",
+      "text": ""
     }
   }
 ]
