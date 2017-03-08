@@ -108,7 +108,7 @@
     "src": "https://www.google.com"
   },
   {
-    "i": "liveScoreCard",
+    "type": "liveScoreCard",
     "prompt": "0",
     "team1": {
       "score": "42",
@@ -153,7 +153,8 @@
     "prompt": "0",
     "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/demarcus_cousins.png",
-      "title": "Demarcus Cousins"
+      "title": "Demarcus Cousins",
+      "subtitle": "He left the kings :("
     },
     "src": "http://www.nba.com/kings/roster/demarcus_cousins"
   },
