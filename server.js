@@ -299,7 +299,7 @@ bot.dialog('/nbaStart', [
       session.endDialog();
     }, 800);
   },
-]).triggerAction({ matches: /(nbastart|start).*/i });
+]).triggerAction({ matches: /(nbastart|start|metadata|user).*/i });
 
 bot.dialog('/nbaResponsePoints', [
   (session, args, next) => {
