@@ -153,10 +153,7 @@
     "prompt": "0",
     "image": {
       "url": "http://res.cloudinary.com/sapien-ai/image/upload/v1490042447/giphy_q4xumq.gif",
-      "title": "GIF GIF GIF",
-      "subtitle": "Does this work? :("
     },
-    "src": "https://google.com"
   },
   {
     "type": "image",
