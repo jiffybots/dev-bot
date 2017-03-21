@@ -286,6 +286,20 @@ bot.dialog('/playerCard', [
   },
 ]).triggerAction({ matches: /(collison|player).*/i });
 
+
+bot.dialog('/gif', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify({
+      "type": "image",
+      "prompt": "0",
+      "image": {
+        "url": "http://res.cloudinary.com/sapien-ai/image/upload/v1490042447/giphy_q4xumq.gif",
+      }}));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /gif/i });
+
 bot.dialog('/nbaStart', [
   (session, args, next) => {
     session.clearDialogStack();

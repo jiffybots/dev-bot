@@ -152,13 +152,6 @@
     "type": "image",
     "prompt": "0",
     "image": {
-      "url": "http://res.cloudinary.com/sapien-ai/image/upload/v1490042447/giphy_q4xumq.gif",
-    },
-  },
-  {
-    "type": "image",
-    "prompt": "0",
-    "image": {
       "url": "https://kings-web.s3-us-west-1.amazonaws.com/demarcus_cousins.png",
       "title": "Demarcus Cousins",
       "subtitle": "He left the kings :("
