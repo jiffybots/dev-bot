@@ -314,6 +314,21 @@ bot.dialog('/gif2', [
   },
 ]).triggerAction({ matches: /gif2/i });
 
+bot.dialog('/gif3', [
+  (session, args, next) => {
+    session.clearDialogStack();
+    session.send(JSON.stringify({
+      "type": "image",
+      "prompt": "0",
+      "image": {
+        "url": "http://res.cloudinary.com/sapien-ai/image/upload/v1490042447/giphy_q4xumq.gif",
+        "title": "Stupid girl",
+        "subtitle": "I'm a crazy ass girl who likes to party and blah blah blah."
+      }}));
+    session.endDialog();
+  },
+]).triggerAction({ matches: /gif3/i });
+
 bot.dialog('/nbaStart', [
   (session, args, next) => {
     session.clearDialogStack();
