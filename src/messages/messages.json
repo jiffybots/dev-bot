@@ -9,9 +9,9 @@
     "prompt": "1",
     "text": "Today I choose life. What do you choose?",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "joy" },
-      { "id": "2", "type": "postBack", "color": "light", "text": "happiness" },
-      { "id": "3", "type": "postBack", "color": "light", "text": "depression" },
+      { "id": "1", "type": "postBack", "color": "light", "text": "joy", "postBackValue": "joy" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "happiness", "postBackValue": "happiness" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "depression", "postBackValue": "depression" },
       { "id": "4", "type": "url", "color": "light", "text": "other", "src": "https://www.google.com" }
     ]
   },
@@ -20,8 +20,8 @@
     "prompt": "1",
     "text": "Would you like to continue?",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "Sure" },
-      { "id": "2", "type": "postBack", "color": "light", "text": "Nope" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Sure", "postBackValue": "sure" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Nope", "postBackValue": "nope" }
     ]
   },
   {
@@ -37,38 +37,38 @@
     "prompt": "1",
     "text": "Happy to help! Here's some quick options to get started:",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "Menu" },
-      { "id": "2", "type": "postBack", "color": "light", "text": "About" },
-      { "id": "3", "type": "postBack", "color": "light", "text": "Commands" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Menu", "postBackValue": "menu" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "About", "postBackValue": "about" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Commands", "postBackValue": "commands" }
     ]
   },
   {
     "type": "buttonYesNo",
     "prompt": "1",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "dark", "text": "yes" },
-      { "id": "2", "type": "postBack", "color": "dark", "text": "no" }
+      { "id": "1", "type": "postBack", "color": "dark", "text": "yes", "postBackValue": "yes" },
+      { "id": "2", "type": "postBack", "color": "dark", "text": "no", "postBackValue": "no" }
     ]
   },
   {
     "type": "roster",
     "prompt": "1",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "Arron Afflalo" },
-      { "id": "2", "type": "postBack", "color": "light", "text": "Tyreke Evans" },
-      { "id": "3", "type": "postBack", "color": "light", "text": "Buddy Hield" },
-      { "id": "4", "type": "postBack", "color": "light", "text": "Darren Collinson" },
-      { "id": "5", "type": "postBack", "color": "light", "text": "Willie Couley-Stein" },
-      { "id": "6", "type": "postBack", "color": "light", "text": "Rudy Gay" },
-      { "id": "7", "type": "postBack", "color": "light", "text": "Langston Galloway" },
-      { "id": "8", "type": "postBack", "color": "light", "text": "Kosta Koufos" },
-      { "id": "9", "type": "postBack", "color": "light", "text": "Skal Labissieri" },
-      { "id": "10", "type": "postBack", "color": "light", "text": "Ty Lawson" },
-      { "id": "11", "type": "postBack", "color": "light", "text": "Ben McLemore" },
-      { "id": "12", "type": "postBack", "color": "light", "text": "Georgios Papagiannis" },
-      { "id": "13", "type": "postBack", "color": "light", "text": "Malachi Richardson" },
-      { "id": "14", "type": "postBack", "color": "light", "text": "Garrett Temple" },
-      { "id": "15", "type": "postBack", "color": "light", "text": "Anthony Tolliver" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Arron Afflalo", "postBackValue": "aa" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Tyreke Evans", "postBackValue": "te" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Buddy Hield", "postBackValue": "bh" },
+      { "id": "4", "type": "postBack", "color": "light", "text": "Darren Collinson", "postBackValue": "dc" },
+      { "id": "5", "type": "postBack", "color": "light", "text": "Willie Couley-Stein", "postBackValue": "wc" },
+      { "id": "6", "type": "postBack", "color": "light", "text": "Rudy Gay", "postBackValue": "rg" },
+      { "id": "7", "type": "postBack", "color": "light", "text": "Langston Galloway", "postBackValue": "lg" },
+      { "id": "8", "type": "postBack", "color": "light", "text": "Kosta Koufos", "postBackValue": "kk" },
+      { "id": "9", "type": "postBack", "color": "light", "text": "Skal Labissieri", "postBackValue": "sl" },
+      { "id": "10", "type": "postBack", "color": "light", "text": "Ty Lawson", "postBackValue": "tl" },
+      { "id": "11", "type": "postBack", "color": "light", "text": "Ben McLemore", "postBackValue": "bm" },
+      { "id": "12", "type": "postBack", "color": "light", "text": "Georgios Papagiannis", "postBackValue": "gp" },
+      { "id": "13", "type": "postBack", "color": "light", "text": "Malachi Richardson", "postBackValue": "mr" },
+      { "id": "14", "type": "postBack", "color": "light", "text": "Garrett Temple", "postBackValue": "gt" },
+      { "id": "15", "type": "postBack", "color": "light", "text": "Anthony Tolliver", "postBackValue": "at" }
     ]
   },
   {
@@ -81,7 +81,7 @@
     "text": "Garrett Temple holds career averages of 3.5 points, 1.5 rebounds and 1.1 assists in 229 career NBA games.",
     "src": "https://www.nba.com/kings/roster/garrett-temple",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "Learn more" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Learn more", "postBackValue": "learnMore" }
     ]
   },
   {
@@ -92,9 +92,9 @@
     },
     "prompt": "1",
     "choices": [
-      { "id": "1", "type": "postBack", "color": "light", "text": "Demarcus Cousins" },
-      { "id": "2", "type": "postBack", "color": "light", "text": "Ty Lawson" },
-      { "id": "3", "type": "postBack", "color": "light", "text": "Garrett Temple" }
+      { "id": "1", "type": "postBack", "color": "light", "text": "Demarcus Cousins", "postBackValue": "dc" },
+      { "id": "2", "type": "postBack", "color": "light", "text": "Ty Lawson", "postBackValue": "tl" },
+      { "id": "3", "type": "postBack", "color": "light", "text": "Garrett Temple", "postBackValue": "gt" }
     ]
   },
   {
@@ -193,9 +193,9 @@
         },
         "text": "Garrett Temple averages of 3.5 points, 1.5 rebounds and 1.1 assists in 229 career NBA games.",
         "choices": [
-          { "id": "1", "type": "postBack", "color": "light", "text": "Game stats" },
-          { "id": "2", "type": "postBack", "color": "light", "text": "About" },
-          { "id": "3", "type": "postBack", "color": "light", "text": "Player stats" }
+          { "id": "1", "type": "postBack", "color": "light", "text": "Game stats", "postBackValue": "gameStats" },
+          { "id": "2", "type": "postBack", "color": "light", "text": "About", "postBackValue": "about" },
+          { "id": "3", "type": "postBack", "color": "light", "text": "Player stats", "postBackValue": "playerStats" }
         ]
       },
       {
@@ -207,9 +207,9 @@
         },
         "text": "Aaron Afflalo is averaging 11.6 ppg, 3.1 rpg, 2.0 apg, 28.7 mpg in 648 career games.",
         "choices": [
-          { "id": "1", "type": "postBack", "color": "light", "text": "Game stats" },
-          { "id": "2", "type": "postBack", "color": "light", "text": "About" },
-          { "id": "3", "type": "postBack", "color": "light", "text": "Player stats" }
+          { "id": "1", "type": "postBack", "color": "light", "text": "Game stats", "postBackValue": "gameStats" },
+          { "id": "2", "type": "postBack", "color": "light", "text": "About", "postBackValue": "about" },
+          { "id": "3", "type": "postBack", "color": "light", "text": "Player stats", "postBackValue": "playerStats" }
         ]
       },
       {
@@ -221,9 +221,9 @@
         },
         "text": "Darron Collison is averaging 12.6 ppg, 2.7 rpg, 4.9 apg, 1.1 spg, 29.4 mpg in 495 career games.",
         "choices": [
-          { "id": "1", "type": "postBack", "color": "light", "text": "Game stats" },
-          { "id": "2", "type": "postBack", "color": "light", "text": "About" },
-          { "id": "3", "type": "postBack", "color": "light", "text": "Player stats" }
+          { "id": "1", "type": "postBack", "color": "light", "text": "Game stats", "postBackValue": "gameStats" },
+          { "id": "2", "type": "postBack", "color": "light", "text": "About", "postBackValue": "about" },
+          { "id": "3", "type": "postBack", "color": "light", "text": "Player stats", "postBackValue": "playerStats" }
         ]
       }
     ]

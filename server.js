@@ -47,22 +47,22 @@ bot.dialog('/', [
       text: 'What message would you like me to send?',
       prompt: 1,
       choices: [
-        { id: '1', type: 'postBack', color: 'light', text: 'Text' },
-        { id: '2', type: 'postBack', color: 'light', text: 'Quick reply - 3+ choices' },
-        { id: '3', type: 'postBack', color: 'light', text: 'Quick reply - 2 choices' },
-        { id: '4', type: 'postBack', color: 'light', text: 'Quick reply menu' },
-        { id: '4', type: 'postBack', color: 'light', text: 'Quick reply - choices only' },
-        { id: '5', type: 'postBack', color: 'light', text: 'Card' },
-        { id: '7', type: 'postBack', color: 'light', text: 'Card with buttons' },
-        { id: '8', type: 'postBack', color: 'light', text: 'Image' },
-        { id: '9', type: 'postBack', color: 'light', text: 'Typing' },
-        { id: '10', type: 'postBack', color: 'light', text: 'Roster' },
-        { id: '11', type: 'postBack', color: 'light', text: 'Live score card' },
-        { id: '12', type: 'postBack', color: 'light', text: 'Player card' },
-        { id: '13', type: 'postBack', color: 'light', text: 'Carousel' },
+        { id: '1', type: 'postBack', color: 'light', text: 'Text', postBackValue: "text" },
+        { id: '2', type: 'postBack', color: 'light', text: 'Quick reply - 3+ choices', postBackValue: "qr3" },
+        { id: '3', type: 'postBack', color: 'light', text: 'Quick reply - 2 choices', postBackValue: "qr2" },
+        { id: '4', type: 'postBack', color: 'light', text: 'Quick reply menu', postBackValue: "qr" },
+        { id: '4', type: 'postBack', color: 'light', text: 'Quick reply - choices only', postBackValue: "qr4" },
+        { id: '5', type: 'postBack', color: 'light', text: 'Card', postBackValue: "card" },
+        { id: '7', type: 'postBack', color: 'light', text: 'Card with buttons', postBackValue: "card2" },
+        { id: '8', type: 'postBack', color: 'light', text: 'Image', postBackValue: "image" },
+        { id: '9', type: 'postBack', color: 'light', text: 'Typing', postBackValue: "typing"},
+        { id: '10', type: 'postBack', color: 'light', text: 'Roster', postBackValue: "roster" },
+        { id: '11', type: 'postBack', color: 'light', text: 'Live score card', postBackValue: "score" },
+        { id: '12', type: 'postBack', color: 'light', text: 'Player card', postBackValue: "player" },
+        { id: '13', type: 'postBack', color: 'light', text: 'Carousel', postBackValue: "carousel" },
         // { id: '13', type: 'text', color: 'light', text: 'Error - 500' },
         // { id: '14', type: 'text', color: 'light', text: 'Error - 403' },
-        { id: '15', type: 'postBack', color: 'light', text: 'Video' },
+        { id: '15', type: 'postBack', color: 'light', text: 'Video', postBackValue: "video" },
       ],
     };
     let currentChoices = quickReplyOptions.choices;
@@ -92,7 +92,7 @@ bot.dialog('/', [
             "prompt": "0",
             "choices": [
               { "id": "1", "type": "url", "color": "light", "text": "View profile", "src": "http://www.nba.com/kings/tickets" },
-              { "id": "2", "type": "postBack", "color": "light", "text": "Live stats" }
+              { "id": "2", "type": "postBack", "color": "light", "text": "Live stats", "postBackValue": "liveStats" }
             ]
           }));
           break;
