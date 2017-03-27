@@ -139,11 +139,11 @@
       "college": "UCLA",
       "drafted": "2009",
       "stats": {
-        "PPG": "12.6",
-        "RPG": "2.7",
-        "APG": "4.9",
-        "SPG": "1.1",
-        "MPG": "29.4"
+        "ppg": "12.6",
+        "rpg": "2.7",
+        "apg": "4.9",
+        "spg": "1.1",
+        "mpg": "29.4"
       }
     },
     "src": "http://res.cloudinary.com/sapien-ai/image/upload/c_scale,h_500/v1487718148/darren_collison_action_vtceut.png"
